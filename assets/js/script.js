@@ -3,8 +3,20 @@ let selectionButton = document.getElementsByClassName("selection-button");
 //Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
 let alertResult = document.getElementById("alert-result");
 
+
+
+
 //Gets span where WIN score will be displayed.
 let wins = document.getElementById("user-win");
+
+//Gets span where LOSE score will be displayed.
+let lose = document.getElementById("user-lose");
+
+//Gets span where DRAW score will be displayed.
+let draw = document.getElementById("draw");
+
+
+
 
 //Where we store our user's choice
 let userSelectedChoice;
@@ -53,7 +65,7 @@ function computerChoice() {
 function compareChoice() {
     if (computerSelectedChoice===userSelectedChoice) {
         alertResult.innerHTML = "You draw!";
-        updateDraw;
+        updateDraw();
     } else if ((userSelectedChoice==="paper" && computerSelectedChoice==="rock") 
     || (userSelectedChoice==="rock" && computerSelectedChoice==="scissors") 
     || (userSelectedChoice==="scissors" && computerSelectedChoice==="paper")) {
@@ -75,11 +87,13 @@ function updateWin() {
 }
 
 function updateDraw() {
-
+    oldScore = parseInt(draw.innerText);
+    document.getElementById("draw").innerText = oldScore+1;
 }
 
 function updateLose() {
-
+    oldScore = parseInt(lose.innerText);
+    document.getElementById("user-lose").innerText = oldScore+1;
 }
 
 function gameOver() {
