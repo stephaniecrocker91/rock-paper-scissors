@@ -4,6 +4,9 @@ let selectionButton = document.getElementsByClassName("selection-button");
 //Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
 let alertResult = document.getElementById("alert-result");
 
+//Gets span where Round Number will be displayed.
+let roundNumberDisplay = document.getElementById("round-number");
+
 //Gets span where WIN, LOSE and DRAW scores will be displayed.
 let wins = document.getElementById("user-win");
 let lose = document.getElementById("user-lose");
@@ -13,8 +16,6 @@ let draw = document.getElementById("draw");
 //Gets span where User Choice & Computer Choice will be displayed. Will later add image
 let userChoiceDisplay = document.getElementById("user-image");
 let computerChoiceDisplay = document.getElementById("computer-image");
-
-
 
 
 //Where we store our user's choice
@@ -37,6 +38,13 @@ function userChoice(e) {
     userChoiceDisplay.innerText = userSelectedChoice;
     computerChoice();
     compareChoice();
+    updateRound();
+}
+/**Function that displays Round Number */
+function updateRound() {
+    lastRound = parseInt(roundNumberDisplay.innerText);
+    document.getElementById("round-number").innerText = lastRound+1;
+
 }
 
 function runGame() {
