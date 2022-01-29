@@ -1,19 +1,18 @@
 // Gets button selection-elements and adds event listeneres
 let selectionButton = document.getElementsByClassName("selection-button");
+
 //Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
 let alertResult = document.getElementById("alert-result");
 
-
-
-
-//Gets span where WIN score will be displayed.
+//Gets span where WIN, LOSE and DRAW scores will be displayed.
 let wins = document.getElementById("user-win");
-
-//Gets span where LOSE score will be displayed.
 let lose = document.getElementById("user-lose");
-
-//Gets span where DRAW score will be displayed.
 let draw = document.getElementById("draw");
+
+
+//Gets span where User Choice & Computer Choice will be displayed. Will later add image
+let userChoiceDisplay = document.getElementById("user-image");
+let computerChoiceDisplay = document.getElementById("computer-image");
 
 
 
@@ -30,13 +29,13 @@ for (i of selectionButton) {
 }
 
 
-/** Selects the targets ID and 
- * stores it in userSelectedChoice */ 
+/** Selects the targets ID,
+ * stores it in userSelectedChoice and displays
+ * in userChoiceDisplay. */ 
 function userChoice(e) {
     userSelectedChoice = e.target.id;
-    console.log(`user chose ${userSelectedChoice}`);
+    userChoiceDisplay.innerText = userSelectedChoice;
     computerChoice();
-    console.log(`computer chose ${computerSelectedChoice}`);
     compareChoice();
 }
 
@@ -46,7 +45,8 @@ function runGame() {
 
 
 /** Function that randomly generates 
- * the computers choice */ 
+ * the computers choice, stores it in computerSelectedChoice
+ * and displays it in computerChoiceDisplay */ 
 function computerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0 ) {
@@ -58,7 +58,7 @@ function computerChoice() {
         else if (randomNumber === 2) {
             computerSelectedChoice = 'scissors';
         }
-
+        computerChoiceDisplay.innerText = computerSelectedChoice;
 }
 /** Function that compares user choice and computer choice, determining
  * the result and displaying an alert message below: ("You win!", "You lose!" or "You draw!") */ 
