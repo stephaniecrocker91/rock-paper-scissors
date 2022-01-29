@@ -36,11 +36,14 @@ function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerText = userSelectedChoice;
 }
-/**Function that displays Round Number */ 
+/**Function that displays Round Number 
+ * */ 
 function updateRound() {
     lastRound = parseInt(roundNumberDisplay.innerText);
     document.getElementById("round-number").innerText = lastRound+1;
-
+    if (lastRound === 4) {
+        gameOver();
+    }
 }
 
 
@@ -82,22 +85,26 @@ function compareChoice() {
  * score by 1 point, each time user wins
  */
 function updateWin() {
-    oldScore = parseInt(wins.innerText);
-    document.getElementById("user-win").innerText = oldScore+1;
+    oldScoreWin = parseInt(wins.innerText);
+    document.getElementById("user-win").innerText = oldScoreWin+1;
 }
 
 function updateDraw() {
-    oldScore = parseInt(draw.innerText);
-    document.getElementById("draw").innerText = oldScore+1;
+    oldScoreDraw = parseInt(draw.innerText);
+    document.getElementById("draw").innerText = oldScoreDraw+1;
 }
 
 function updateLose() {
-    oldScore = parseInt(lose.innerText);
-    document.getElementById("user-lose").innerText = oldScore+1;
+    oldScoreLose = parseInt(lose.innerText);
+    document.getElementById("user-lose").innerText = oldScoreLose+1;
 }
 
 function gameOver() {
-
+    if (oldScoreWin>oldScoreLose) {
+        alert("You win!");
+    } else if (oldScoreWin<oldScoreLose) {
+        alert("You lose!")
+    }
 }
 
 //Init function that runs all the game functions
