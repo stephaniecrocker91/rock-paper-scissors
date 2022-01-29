@@ -26,9 +26,8 @@ let computerSelectedChoice;
 
 //Event listener for Rock, Paper, Scissor selection buttons
 for (i of selectionButton) {
-    i.addEventListener("click", userChoice);
+    i.addEventListener("click", runGame);
 }
-
 
 /** Selects the targets ID,
  * stores it in userSelectedChoice and displays
@@ -36,19 +35,12 @@ for (i of selectionButton) {
 function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerText = userSelectedChoice;
-    computerChoice();
-    compareChoice();
-    updateRound();
 }
-/**Function that displays Round Number */
+/**Function that displays Round Number */ 
 function updateRound() {
     lastRound = parseInt(roundNumberDisplay.innerText);
     document.getElementById("round-number").innerText = lastRound+1;
 
-}
-
-function runGame() {
-    
 }
 
 
@@ -107,3 +99,12 @@ function updateLose() {
 function gameOver() {
 
 }
+
+//Init function that runs all the game functions
+function runGame(e) {
+    userChoice(e);
+    computerChoice();
+    compareChoice();
+    updateRound();
+}
+
