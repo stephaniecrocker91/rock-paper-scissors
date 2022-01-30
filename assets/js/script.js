@@ -32,8 +32,20 @@ for (i of selectionButton) {
     i.addEventListener("click", runGame);
 }
 
-//Event listener for Refresh Button
-refreshButton.addEventListener("click", refreshGame);
+
+/** Function for adding Player Name */
+
+function handlePlayerName (e) {
+    e.preventDefault();
+    let playerName = (document.getElementById("player-name")).value;
+    console.log(playerName)
+    document.getElementById("insert-player-name").innerText= playerName;
+
+}
+
+let form = document.getElementById("player-name-form");
+form.addEventListener("submit", handlePlayerName);
+
 
 /** Function refresh game, which will also be the games starting point: 
  * Round 1 and 
@@ -51,6 +63,9 @@ function refreshGame() {
     userChoiceDisplay.innerText="";
     alertResult.innerText="";
 }
+
+//Event listener for Refresh Button
+refreshButton.addEventListener("click", refreshGame);
 
 
 /** Selects the targets ID,
