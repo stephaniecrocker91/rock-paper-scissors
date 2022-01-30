@@ -1,4 +1,4 @@
-// Gets button selection-elements and adds event listeneres
+// Gets button selection-elements to then add event listeneres
 let selectionButton = document.getElementsByClassName("selection-button");
 
 //Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
@@ -18,6 +18,9 @@ let userChoiceDisplay = document.getElementById("user-image");
 let computerChoiceDisplay = document.getElementById("computer-image");
 
 
+//Get Refresh Button to then add event listener
+let refreshButton = document.getElementById("refresh-button");
+
 //Where we store our user's choice
 let userSelectedChoice;
 
@@ -28,6 +31,21 @@ let computerSelectedChoice;
 for (i of selectionButton) {
     i.addEventListener("click", runGame);
 }
+
+//Event listener for Refresh Button
+refreshButton.addEventListener("click", refreshGame);
+
+/** Function refresh game, which will also be thr games starting point: 
+ * Round 1 and 
+ * results tally of 0
+ */
+//function refreshGame() {
+ //   wins.innerText="0";
+  //  lose.innerText="0";
+   // draw.innerText="0";
+   // roundNumberDisplay.innerText = "1";
+//}
+
 
 /** Selects the targets ID,
  * stores it in userSelectedChoice and displays
@@ -98,11 +116,11 @@ function updateLose() {
 
 function gameOver() {
     if (oldScoreWin > oldScoreLose) {
-        (document.getElementById("button-area")).innerHTML = "You win the game!";
+        (document.getElementById("end-game-result")).innerHTML = "You win the game!";
     } else if (oldScoreWin < oldScoreLose) {
-        (document.getElementById("button-area")).innerHTML = "Game over, you lose!";
+        (document.getElementById("end-game-result")).innerHTML = "Game over, you lose!";
     } else if (oldScoreLose === oldScoreWin) {
-        (document.getElementById("button-area")).innerHTML = "It's a draw!";
+        (document.getElementById("end-game-result")).innerHTML = "It's a draw!";
     }
 }
 
