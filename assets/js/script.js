@@ -130,16 +130,15 @@ function updateLose() {
 function gameOver() {
     let finalScoreWin = document.getElementById("user-win").innerText;
     let finalScoreLose = document.getElementById("user-lose").innerText;
-    let finalScoreDraw = document.getElementById("draw").innerText
-
-
+    let finalScoreDraw = document.getElementById("draw").innerText;
     if (finalScoreWin > finalScoreLose) {
-        (document.getElementById("end-game-result")).innerHTML = "You win the game!";
+        (document.getElementById("game-over-modal")).innerHTML = "You win the game!";
     } else if (finalScoreWin < finalScoreLose) {
-        (document.getElementById("end-game-result")).innerHTML = "Game over, you lose!";
+        (document.getElementById("game-over-modal")).innerHTML = "Game over, you lose!";
     } else if (finalScoreLose === finalScoreWin) {
-        (document.getElementById("end-game-result")).innerHTML = "It's a draw!";
+        (document.getElementById("game-over-modal")).innerHTML = "It's a draw!";
     }
+    (document.getElementById("play-game-modal")).style.display = "none";
 }
 
 //Init function that runs all the game functions
