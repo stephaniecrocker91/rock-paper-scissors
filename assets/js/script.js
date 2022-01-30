@@ -39,8 +39,6 @@ function launchGame() {
     
 }
 
-
-
 /** Function for adding Player Name */
 
 function handlePlayerName (e) {
@@ -63,7 +61,8 @@ form.addEventListener("submit", handlePlayerName);
  */
 function refreshGame() {
     (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("play-game-modal")).style.display = "block";
+    (document.getElementById("play-game-modal")).style.display = "none";
+    (document.getElementById("launch-game-modal")).style.display = "block";
     
     wins.innerText="0";
     lose.innerText="0";
