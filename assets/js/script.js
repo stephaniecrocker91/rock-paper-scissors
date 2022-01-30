@@ -42,7 +42,7 @@ function handlePlayerName (e) {
     document.getElementById("insert-player-name").innerText= playerName;
 
 }
-
+// Event listener for submit button in form
 let form = document.getElementById("player-name-form");
 form.addEventListener("submit", handlePlayerName);
 
@@ -62,6 +62,9 @@ function refreshGame() {
     computerChoiceDisplay.innerText ="";
     userChoiceDisplay.innerText="";
     alertResult.innerText="";
+    (document.getElementById("player-name")).value="";
+    document.getElementById("insert-player-name").innerText= "";
+
 }
 
 //Event listener for Refresh Button
