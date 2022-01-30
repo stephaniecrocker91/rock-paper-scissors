@@ -104,22 +104,37 @@ function updateWin() {
     document.getElementById("user-win").innerText = oldScoreWin + 1;
 }
 
+/** Function that increments the DRAW
+ * score by 1 point, each time user wins
+ */
 function updateDraw() {
     oldScoreDraw = parseInt(draw.innerText);
     document.getElementById("draw").innerText = oldScoreDraw + 1;
 }
 
+/** Function that increments the LOSE
+ * score by 1 point, each time user wins
+ */
 function updateLose() {
     oldScoreLose = parseInt(lose.innerText);
     document.getElementById("user-lose").innerText = oldScoreLose + 1;
 }
 
+/**Function that will 
+ * display User's end result after 5 rounds: 
+ * Win, lose or draw
+ */
 function gameOver() {
-    if (oldScoreWin > oldScoreLose) {
+    let finalScoreWin = document.getElementById("user-win").innerText;
+    let finalScoreLose = document.getElementById("user-lose").innerText;
+    let finalScoreDraw = document.getElementById("draw").innerText
+
+
+    if (finalScoreWin > finalScoreLose) {
         (document.getElementById("end-game-result")).innerHTML = "You win the game!";
-    } else if (oldScoreWin < oldScoreLose) {
+    } else if (finalScoreWin < finalScoreLose) {
         (document.getElementById("end-game-result")).innerHTML = "Game over, you lose!";
-    } else if (oldScoreLose === oldScoreWin) {
+    } else if (finalScoreLose === finalScoreWin) {
         (document.getElementById("end-game-result")).innerHTML = "It's a draw!";
     }
 }
