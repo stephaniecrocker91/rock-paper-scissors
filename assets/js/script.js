@@ -31,17 +31,16 @@ for (i of selectionButton) {
 
 /** Selects the targets ID,
  * stores it in userSelectedChoice and displays
- * in userChoiceDisplay. */ 
+ * in userChoiceDisplay. */
 function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerText = userSelectedChoice;
 }
-/**Function that displays Round Number 
- * */ 
+/** Function that displays Round Number */
 function updateRound() {
     lastRound = parseInt(roundNumberDisplay.innerText);
-    document.getElementById("round-number").innerText = lastRound+1;
-    if (lastRound === 4) {
+    document.getElementById("round-number").innerText = lastRound + 1;
+    if (lastRound === 5) {
         gameOver();
     }
 }
@@ -49,61 +48,61 @@ function updateRound() {
 
 /** Function that randomly generates 
  * the computers choice, stores it in computerSelectedChoice
- * and displays it in computerChoiceDisplay */ 
+ * and displays it in computerChoiceDisplay */
 function computerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
-    if (randomNumber === 0 ) {
+    if (randomNumber === 0) {
         computerSelectedChoice = 'rock';
-        }
-        else if (randomNumber === 1 ){
-            computerSelectedChoice = 'paper';
-        }
-        else if (randomNumber === 2) {
-            computerSelectedChoice = 'scissors';
-        }
-        computerChoiceDisplay.innerText = computerSelectedChoice;
+    } else if (randomNumber === 1) {
+        computerSelectedChoice = 'paper';
+    } else if (randomNumber === 2) {
+        computerSelectedChoice = 'scissors';
+    }
+    computerChoiceDisplay.innerText = computerSelectedChoice;
 }
 /** Function that compares user choice and computer choice, determining
- * the result and displaying an alert message below: ("You win!", "You lose!" or "You draw!") */ 
+ * the result and displaying an alert message below: ("You win!", "You lose!" or "You draw!") */
 function compareChoice() {
-    if (computerSelectedChoice===userSelectedChoice) {
+    if (computerSelectedChoice === userSelectedChoice) {
         alertResult.innerHTML = "You draw!";
         updateDraw();
-    } else if ((userSelectedChoice==="paper" && computerSelectedChoice==="rock") 
-    || (userSelectedChoice==="rock" && computerSelectedChoice==="scissors") 
-    || (userSelectedChoice==="scissors" && computerSelectedChoice==="paper")) {
+    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") ||
+        (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") ||
+        (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
         alertResult.innerHTML = "You win!";
         updateWin();
-    } else if ((userSelectedChoice==="paper" && computerSelectedChoice==="scissors") 
-    || (userSelectedChoice==="rock" && computerSelectedChoice==="paper") 
-    || (userSelectedChoice==="scissors" && computerSelectedChoice==="rock")) {
+    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") ||
+        (userSelectedChoice === "rock" && computerSelectedChoice === "paper") ||
+        (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
         alertResult.innerHTML = "You lose!";
         updateLose();
-    } 
+    }
 }
 /** Function that increments the WIN
  * score by 1 point, each time user wins
  */
 function updateWin() {
     oldScoreWin = parseInt(wins.innerText);
-    document.getElementById("user-win").innerText = oldScoreWin+1;
+    document.getElementById("user-win").innerText = oldScoreWin + 1;
 }
 
 function updateDraw() {
     oldScoreDraw = parseInt(draw.innerText);
-    document.getElementById("draw").innerText = oldScoreDraw+1;
+    document.getElementById("draw").innerText = oldScoreDraw + 1;
 }
 
 function updateLose() {
     oldScoreLose = parseInt(lose.innerText);
-    document.getElementById("user-lose").innerText = oldScoreLose+1;
+    document.getElementById("user-lose").innerText = oldScoreLose + 1;
 }
 
 function gameOver() {
-    if (oldScoreWin>oldScoreLose) {
-        alert("You win!");
-    } else if (oldScoreWin<oldScoreLose) {
-        alert("You lose!")
+    if (oldScoreWin > oldScoreLose) {
+        (document.getElementById("button-area")).innerHTML = "You win the game!";
+    } else if (oldScoreWin < oldScoreLose) {
+        (document.getElementById("button-area")).innerHTML = "Game over, you lose!";
+    } else if (oldScoreLose === oldScoreWin) {
+        (document.getElementById("button-area")).innerHTML = "It's a draw!";
     }
 }
 
@@ -114,4 +113,3 @@ function runGame(e) {
     compareChoice();
     updateRound();
 }
-

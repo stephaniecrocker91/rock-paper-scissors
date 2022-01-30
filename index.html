@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,32 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Rock, Paper, Scissors</h1>
-    <h2>Round <span id="round-number">1</span></h2>
-    <div id="button-area">
-        <button class= "selection-button" id="rock">rock</button>
-        <button class= "selection-button" id="paper">paper</button>
-        <button class= "selection-button" id="scissors">scissors</button>
-    </div>
-    <div id="selected-choices-section">
-        <p>Your choice: <span id="user-image"></span></p>
-        <p>Computer choice: <span id="computer-image"></span></p>
-    </div>
-    <div id="score-area">
-        <p>Win: <span id="user-win">0</span></p>
-        <p>Draw: <span id="draw">0</span></p>
-        <p>Lose: <span id="user-lose">0</span></p>
-    </div>
-    <div id="alert-section">
-        <h2 id="alert-result"></h2>
+    <div id="game-section">
+        <h2>Round <span id="round-number">1</span></h2>
+        <div id="button-area">
+            <button class="selection-button" id="rock">rock</button>
+            <button class="selection-button" id="paper">paper</button>
+            <button class="selection-button" id="scissors">scissors</button>
+        </div>
+        <div id="selected-choices-section">
+            <p>Your choice: <span id="user-image"></span></p>
+            <p>Computer choice: <span id="computer-image"></span></p>
+        </div>
+        <div id="score-area">
+            <p>Win: <span id="user-win">0</span></p>
+            <p>Draw: <span id="draw">0</span></p>
+            <p>Lose: <span id="user-lose">0</span></p>
+        </div>
+        <div id="alert-section">
+            <h2 id="alert-result"></h2>
+        </div>
         <button id="refresh-button">Refresh</button>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
