@@ -32,6 +32,14 @@ for (i of selectionButton) {
     i.addEventListener("click", runGame);
 }
 
+/**Function for Launch Game Modal */
+function launchGame() {
+    (document.getElementById("play-game-modal")).style.display = "none";
+    (document.getElementById("game-over-modal")).style.display = "none";
+    
+}
+
+
 
 /** Function for adding Player Name */
 
@@ -40,6 +48,8 @@ function handlePlayerName (e) {
     let playerName = (document.getElementById("player-name")).value;
     console.log(playerName)
     document.getElementById("insert-player-name").innerText= playerName;
+    (document.getElementById("play-game-modal")).style.display = "block";
+    (document.getElementById("launch-game-modal")).style.display = "none";
 
 }
 // Event listener for submit button in form
@@ -165,6 +175,7 @@ function gameOver() {
 }
 
 //Init function that runs all the game functions
+
 function runGame(e) {
     userChoice(e);
     computerChoice();
