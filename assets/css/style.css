@@ -7,7 +7,7 @@ body {
 }
 
 #header {
-    background-color: aqua;
+    background-color:lightgreen;
     height: 20vh;
     display: grid;
     
@@ -16,4 +16,10 @@ body {
 h1 {
     align-self: center;
     justify-self: center;
+}
+
+.inline {
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 1.3em;
 }
