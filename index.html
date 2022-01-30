@@ -11,8 +11,19 @@
 
 <body>
     <h1>Rock, Paper, Scissors</h1>
+    <!-- Launch Game Modal here-->
+    <div id="launch-game-modal">
+        <form id="player-name-form" method="POST" action="/login/">
+            <label for="player-name">Player's name: </label>
+            <input type="text" id="player-name">
+            <input type="submit" value="Let's rock!">
+        </form>
 
-    <!-- Play Game Modal -->
+       
+
+    </div>
+
+    <!-- Play Game Modal here -->
     <div id="play-game-modal">
         <h2>Round <span id="round-number">1</span></h2>
         <div id="button-area">
@@ -33,7 +44,7 @@
             <h2 id="alert-result"></h2>
         </div>
     </div>
-    <!-- Game Over Modal -->
+    <!-- Game Over Modal here -->
     <div id="game-over-modal">
         <h2 id="game-over-result"></h2>
         <button id="refresh-button">Refresh</button>
