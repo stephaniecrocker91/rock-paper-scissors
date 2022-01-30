@@ -2,5 +2,18 @@
 
 body {
     font-family: 'Shadows Into Light', 'sans';
+  
+    text-align: center;
+}
+
+#header {
+    background-color: aqua;
+    height: 20vh;
+    display: grid;
     
+}
+
+h1 {
+    align-self: center;
+    justify-self: center;
 }
