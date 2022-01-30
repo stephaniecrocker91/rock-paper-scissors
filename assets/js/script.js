@@ -40,13 +40,16 @@ refreshButton.addEventListener("click", refreshGame);
  * results tally of 0
  */
 function refreshGame() {
+    (document.getElementById("game-over-modal")).style.display = "none";
+    (document.getElementById("play-game-modal")).style.display = "block";
+    refreshButton.style.display="none";
     wins.innerText="0";
     lose.innerText="0";
     draw.innerText="0";
     roundNumberDisplay.innerText = "1";
     computerChoiceDisplay.innerText ="";
     userChoiceDisplay.innerText="";
-
+    alertResult.innerText="";
 }
 
 
@@ -124,8 +127,7 @@ function updateLose() {
 }
 
 /**Function that will 
- * display User's end result after 5 rounds: 
- * Win, lose or draw
+ * display GAME OVER MODAL after 5 rounds and show final result of game
  */
 function gameOver() {
     let finalScoreWin = document.getElementById("user-win").innerText;
@@ -139,6 +141,9 @@ function gameOver() {
         (document.getElementById("game-over-modal")).innerHTML = "It's a draw!";
     }
     (document.getElementById("play-game-modal")).style.display = "none";
+    (document.getElementById("game-over-modal")).style.display = "block";
+    refreshButton.style.display="block";
+    
 }
 
 //Init function that runs all the game functions
