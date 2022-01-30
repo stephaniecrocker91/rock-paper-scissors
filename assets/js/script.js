@@ -37,12 +37,12 @@ refreshButton.addEventListener("click", refreshGame);
 
 /** Function refresh game, which will also be the games starting point: 
  * Round 1 and 
- * results tally of 0
+ * results tally of 0 and choices blank
  */
 function refreshGame() {
     (document.getElementById("game-over-modal")).style.display = "none";
     (document.getElementById("play-game-modal")).style.display = "block";
-    refreshButton.style.display="none";
+    
     wins.innerText="0";
     lose.innerText="0";
     draw.innerText="0";
@@ -134,15 +134,15 @@ function gameOver() {
     let finalScoreLose = document.getElementById("user-lose").innerText;
     let finalScoreDraw = document.getElementById("draw").innerText;
     if (finalScoreWin > finalScoreLose) {
-        (document.getElementById("game-over-modal")).innerHTML = "You win the game!";
+        (document.getElementById("game-over-result")).innerHTML = "You win the game!";
     } else if (finalScoreWin < finalScoreLose) {
-        (document.getElementById("game-over-modal")).innerHTML = "Game over, you lose!";
+        (document.getElementById("game-over-result")).innerHTML = "Game over, you lose!";
     } else if (finalScoreLose === finalScoreWin) {
-        (document.getElementById("game-over-modal")).innerHTML = "It's a draw!";
+        (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
     (document.getElementById("play-game-modal")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "block";
-    refreshButton.style.display="block";
+    
     
 }
 
