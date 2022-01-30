@@ -35,16 +35,19 @@ for (i of selectionButton) {
 //Event listener for Refresh Button
 refreshButton.addEventListener("click", refreshGame);
 
-/** Function refresh game, which will also be thr games starting point: 
+/** Function refresh game, which will also be the games starting point: 
  * Round 1 and 
  * results tally of 0
  */
-//function refreshGame() {
- //   wins.innerText="0";
-  //  lose.innerText="0";
-   // draw.innerText="0";
-   // roundNumberDisplay.innerText = "1";
-//}
+function refreshGame() {
+    wins.innerText="0";
+    lose.innerText="0";
+    draw.innerText="0";
+    roundNumberDisplay.innerText = "1";
+    computerChoiceDisplay.innerText ="";
+    userChoiceDisplay.innerText="";
+
+}
 
 
 /** Selects the targets ID,
