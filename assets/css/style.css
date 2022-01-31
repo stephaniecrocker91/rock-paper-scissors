@@ -42,12 +42,15 @@ h1 {
 /*Game Modal Styling here*/
 /* Styling for selection button area */
 
-#user-image,
+/* #user-image,
 #computer-image {
     font-size: 1.5rem;
     color: whitesmoke;
     background-color: black;
    
+}*/
+#user-image img {
+    width: 20vw;
 }
 
 #alert-section {

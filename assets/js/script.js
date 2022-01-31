@@ -85,7 +85,7 @@ refreshButton.addEventListener("click", refreshGame);
  * in userChoiceDisplay. */
 function userChoice(e) {
     userSelectedChoice = e.target.id;
-    userChoiceDisplay.innerText = userSelectedChoice;
+    userChoiceDisplay.innerHTML = `<img src="./assets/images/${userSelectedChoice}.jpg" alt="${userSelectedChoice}">`;
 }
 /** Function that displays Round Number */
 function updateRound() {
