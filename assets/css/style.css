@@ -6,6 +6,8 @@ body {
     text-align: center;
 }
 
+/* Styling for header */
+
 #header {
     background-color:rgb(144, 238, 144);
     height: 20vh;
@@ -16,17 +18,22 @@ body {
 h1 {
     align-self: center;
     justify-self: center;
+ 
 }
 
-.inline {
-    display: inline-block;
-    margin: 0 5%;
-    font-size: 1.3em;
+/* Styling for launch-game-modal */
+#launch-game-modal {
+    height: 50vh;
+    display: grid;
 }
 
-#score-area {
-    background-color: rgb(144, 238, 144, 0.3);
+#form-div {
+    align-self: center;
+    justify-self: center;
 }
+
+
+/* Styling for selection button area */
 
 #button-area {
     height: 33vh;
@@ -38,3 +45,16 @@ h1 {
     justify-self: center;
     
 }
+
+/*Styling for score display */
+
+.inline {
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 1.3em;
+}
+
+#score-area {
+    background-color: rgb(144, 238, 144, 0.3);
+}
+
