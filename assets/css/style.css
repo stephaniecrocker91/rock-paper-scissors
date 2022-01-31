@@ -18,6 +18,7 @@ body {
 h1 {
     align-self: center;
     justify-self: center;
+    font-size: 5vh;
  
 }
 
@@ -30,6 +31,7 @@ h1 {
 #form-div {
     align-self: center;
     justify-self: center;
+    font-size: 2.8vh;;
 }
 
 
@@ -56,5 +58,25 @@ h1 {
 
 #score-area {
     background-color: rgb(144, 238, 144, 0.3);
+}
+
+/*Styling for buttons */
+
+.selection-button {
+    width: 7rem;
+}
+
+
+.selection-button,
+#button-name {
+    background: none;
+    border: none;
+    background-color:  rgb(144, 238, 144, 1);
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-family: 'Shadows Into Light', 'sans';
+    font-size: 1.5rem;
+    border-radius: 20%;
+
 }
 
