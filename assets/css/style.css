@@ -24,16 +24,20 @@ h1 {
 
 /* Styling for launch-game-modal */
 #launch-game-modal {
-    height: 50vh;
+    height: 60vh;
     display: grid;
 }
 
 #form-div {
-    align-self: center;
+   align-self: center;
     justify-self: center;
-    font-size: 2.8vh;;
+    font-size: 2.8vh;
 }
 
+#rockpaperscissorsimage {
+    width: 90vw;
+    
+}
 
 /* Styling for selection button area */
 
