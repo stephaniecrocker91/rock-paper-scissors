@@ -15,12 +15,12 @@
     </div>
     <!-- Launch Game Modal here-->
     <div id="launch-game-modal">
-        
+
         <div id="form-div">
             <img src="./assets/images/rock_paper_scissors.jpg" alt="" id="rockpaperscissorsimage">
             <form id="player-name-form" method="POST" action="/login/">
                 <label for="player-name">Player's name: </label>
-                <input type="text" id="player-name"  required>
+                <input type="text" id="player-name" required>
                 <input type="submit" value="Let's rock!" id="button-name">
             </form>
         </div>
@@ -29,6 +29,10 @@
     <!-- Play Game Modal here -->
     <div id="play-game-modal">
         <h2>Round <span id="round-number">1</span></h2>
+        <div id="selected-choices-section">
+            <p><span id="insert-player-name"></span>'s choice: <span id="user-image"></span></p>
+            <p>Computer's choice: <span id="computer-image"></span></p>
+        </div>
         <div id="button-area">
             <div id="button-area-2">
                 <button class="selection-button" id="rock">rock</button>
@@ -36,10 +40,7 @@
                 <button class="selection-button" id="scissors">scissors</button>
             </div>
         </div>
-        <div id="selected-choices-section">
-            <p><span id="insert-player-name"></span>'s choice: <span id="user-image"></span></p>
-            <p>Computer's choice: <span id="computer-image"></span></p>
-        </div>
+
         <div id="score-area">
             <p class="inline">Win: <span id="user-win">0</span></p>
             <p class="inline">Draw: <span id="draw">0</span></p>
