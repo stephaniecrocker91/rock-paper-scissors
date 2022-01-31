@@ -109,7 +109,7 @@ function computerChoice() {
     } else if (randomNumber === 2) {
         computerSelectedChoice = 'scissors';
     }
-    computerChoiceDisplay.innerText = computerSelectedChoice;
+    computerChoiceDisplay.innerHTML = `<img src="./assets/images/${computerSelectedChoice}.jpg" alt="${computerSelectedChoice}">`;
 }
 /** Function that compares user choice and computer choice, determining
  * the result and displaying an alert message below: ("You win!", "You lose!" or "You draw!") */
