@@ -37,6 +37,7 @@ function launchGame() {
     (document.getElementById("play-game-modal-1")).style.display = "none";
     (document.getElementById("play-game-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
+    (document.getElementById("round-number-display")).style.display = "none";
     
 
     
@@ -51,6 +52,8 @@ function handlePlayerName (e) {
     document.getElementById("insert-player-name").innerText= playerName;
     (document.getElementById("play-game-modal-2")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
+    (document.getElementById("round-number-display")).style.display = "block";
+    
     
 
 }
@@ -68,6 +71,7 @@ function refreshGame() {
     (document.getElementById("play-game-modal-1")).style.display = "none";
     (document.getElementById("play-game-modal-2")).style.display = "none";
     (document.getElementById("launch-game-modal")).style.display = "block";
+    (document.getElementById("round-number-display")).style.display = "none";
     
     wins.innerText="0";
     lose.innerText="0";
@@ -176,6 +180,7 @@ function gameOver() {
     (document.getElementById("play-game-modal-1")).style.display = "none";
     (document.getElementById("play-game-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "block";
+    (document.getElementById("round-number-display")).style.display = "none";
     
     
 }
