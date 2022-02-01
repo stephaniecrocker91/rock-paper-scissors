@@ -40,32 +40,32 @@ h1 {
 }
 
 /*Game Modal Styling here*/
-/* Styling for selection button area */
 
-/* #user-image,
-#computer-image {
-    font-size: 1.5rem;
-    color: whitesmoke;
-    background-color: black;
-   
-}*/
 #user-image img,
 #computer-image img {
     width: 20vw;
 }
 
-
+/* You lose, you win, you draw alert here*/
 #alert-section {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   margin-top: ;
     background-color: black;
     color: whitesmoke;
 }
 
+#alert-section {
+    display: grid;
+    height: 10vh;
+}
+
+#alert-result {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Rock paper scissors button area centering*/
 #button-area {
-    height: 33vh;
+    height: 10vh;
     display:grid;
 }
 
