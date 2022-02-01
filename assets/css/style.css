@@ -63,9 +63,16 @@ h1 {
 /*Game Modal Styling here*/
 
 /* User and computer image choice*/
+
+#user-image img {
+    transform: rotateY(180deg);
+}
 #user-image img,
 #computer-image img {
     width: 20vw;
+}
+#selected-choices-section .inline p {
+    width: 30px;
 }
 
 /* You lose, you win, you draw alert here*/
