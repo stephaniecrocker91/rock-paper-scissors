@@ -22,71 +22,6 @@ h1 {
  
 }
 
-/* Styling for launch-game-modal */
-#launch-game-modal {
-    height: 60vh;
-    display: grid;
-}
-
-#form-div {
-   align-self: center;
-    justify-self: center;
-    font-size: 2.8vh;
-}
-
-#rockpaperscissorsimage {
-    width: 90vw;
-    
-}
-
-/*Game Modal Styling here*/
-
-#user-image img,
-#computer-image img {
-    width: 20vw;
-}
-
-/* You lose, you win, you draw alert here*/
-#alert-section {
-   margin-top: ;
-    background-color: black;
-    color: whitesmoke;
-}
-
-#alert-section {
-    display: grid;
-    height: 10vh;
-}
-
-#alert-result {
-    align-self: center;
-    justify-self: center;
-}
-
-/* Rock paper scissors button area centering*/
-#button-area {
-    height: 10vh;
-    display:grid;
-}
-
-#button-area-2 {
-    align-self: center;
-    justify-self: center;
-    
-}
-
-/*Styling for score display */
-
-.inline {
-    display: inline-block;
-    margin: 0 5%;
-    font-size: 1.3em;
-}
-
-#score-area {
-    background-color: rgb(144, 238, 144, 0.3);
-}
-
 /*Styling for buttons */
 
 .selection-button {
@@ -107,4 +42,69 @@ h1 {
     border-radius: 20%;
 
 }
+
+/* Styling for launch-game-modal */
+#launch-game-modal {
+    height: 60vh;
+    display: grid;
+}
+
+#form-div {
+   align-self: center;
+    justify-self: center;
+    font-size: 2.8vh;
+}
+
+#rockpaperscissorsimage {
+    width: 90vw;
+    
+}
+
+/*Game Modal Styling here*/
+
+/* User and computer image choice*/
+#user-image img,
+#computer-image img {
+    width: 20vw;
+}
+
+/* You lose, you win, you draw alert here*/
+#alert-section {
+   margin-top: ;
+    background-color: black;
+    color: whitesmoke;
+    display: grid;
+    height: 10vh;
+}
+
+#alert-result {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Rock paper scissors selection buttons*/
+#button-area {
+    height: 10vh;
+    display:grid;
+}
+
+#button-area-2 {
+    align-self: center;
+    justify-self: center;
+    
+}
+
+/*Styling for score display: win, lose, draw tally */
+
+.inline {
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 1.3em;
+}
+
+#score-area {
+    background-color: rgb(144, 238, 144, 0.3);
+}
+
+
 

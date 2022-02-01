@@ -30,9 +30,19 @@
     <div id="play-game-modal">
         <h2>Round <span id="round-number">1</span></h2>
         <div id="selected-choices-section">
-            <p><span id="insert-player-name"></span>'s choice: <span id="user-image"></span></p>
-            <p>Computer's choice: <span id="computer-image"></span></p>
-           
+            <div class="inline">
+                <span id="user-image"></span>
+                <p><span id="insert-player-name"></span>'s choice: </p>
+            </div>
+            <div class="inline">
+                <span id="computer-image"></span>
+                <p>Computer's choice: </p>
+            </div>
+
+
+
+             <!-- <p class="inline"><span id="insert-player-name"></span>'s choice: <span id="user-image"></span></p>
+            <p class="inline">Computer's choice: <span id="computer-image"></span></p> -->
         </div>
         <div id="alert-section">
             <h2 id="alert-result"></h2>
@@ -50,7 +60,7 @@
             <p class="inline">Draw: <span id="draw">0</span></p>
             <p class="inline">Lose: <span id="user-lose">0</span></p>
         </div>
-        
+
     </div>
     <!-- Game Over Modal here -->
     <div id="game-over-modal">
