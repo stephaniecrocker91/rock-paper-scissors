@@ -71,22 +71,33 @@ h1 {
 #computer-image img {
     width: 20vw;
 }
-#selected-choices-section .inline p {
-    width: 30px;
-}
+
 
 /* You lose, you win, you draw alert here*/
-#alert-section {
-   margin-top: ;
+.black-box {
     background-color: black;
     color: whitesmoke;
     display: grid;
-    height: 10vh;
+    height: 20vh;
 }
 
 #alert-result {
     align-self: center;
-    justify-self: center;
+    
+}
+
+/*Styling for score display: win, lose, draw tally */
+
+.inline {
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 1.3em;
+}
+
+#score-area {
+    font: 0.5rem;;
+    background-color: rgb(144, 238, 144, 0.3);
+    
 }
 
 /* Rock paper scissors selection buttons*/
@@ -101,18 +112,7 @@ h1 {
     
 }
 
-/*Styling for score display: win, lose, draw tally */
 
-.inline {
-    display: inline-block;
-    margin: 0 5%;
-    font-size: 1.3em;
-}
-
-#score-area {
-    background-color: rgb(144, 238, 144, 0.3);
-    
-}
 
 
 
