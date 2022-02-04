@@ -46,8 +46,8 @@ refreshButton.addEventListener("click", refreshGame);
 
 /** FUNCTION for Launch Game Modal */
 function launchGame() {
-    (document.getElementById("play-game-modal-1")).style.display = "none";
-    (document.getElementById("play-game-modal-2")).style.display = "none";
+    (document.getElementById("play-round-modal-1")).style.display = "none";
+    (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
     (document.getElementById("round-number-display")).style.display = "none"; 
 }
@@ -58,7 +58,7 @@ function handlePlayerName (e) {
     let playerName = (document.getElementById("player-name")).value;
     console.log(playerName)
     document.getElementById("insert-player-name").innerText= playerName;
-    (document.getElementById("play-game-modal-2")).style.display = "block";
+    (document.getElementById("play-round-modal-2")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
     (document.getElementById("round-number-display")).style.display = "block";
 }
@@ -88,7 +88,7 @@ function updateRound() {
  function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerHTML = `<img src="./assets/images/${userSelectedChoice}.jpg" alt="${userSelectedChoice}">`;
-    (document.getElementById("play-game-modal-1")).style.display = "block";
+    (document.getElementById("play-round-modal-1")).style.display = "block";
 }
 
 
@@ -132,8 +132,8 @@ function compareChoice() {
  */
 function refreshGame() {
     (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("play-game-modal-1")).style.display = "none";
-    (document.getElementById("play-game-modal-2")).style.display = "none";
+    (document.getElementById("play-round-modal-1")).style.display = "none";
+    (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("launch-game-modal")).style.display = "block";
     (document.getElementById("round-number-display")).style.display = "none";
     
@@ -191,8 +191,8 @@ function gameOver() {
     } else if (finalScoreLose === finalScoreWin) {
         (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
-    (document.getElementById("play-game-modal-1")).style.display = "none";
-    (document.getElementById("play-game-modal-2")).style.display = "none";
+    (document.getElementById("play-round-modal-1")).style.display = "none";
+    (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "block";
     (document.getElementById("round-number-display")).style.display = "none";    
 }
