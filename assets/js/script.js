@@ -49,7 +49,7 @@ function launchGame() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("round-number-display")).style.display = "none"; 
+    (document.getElementById("round-number-section")).style.display = "none"; 
 }
 
 /** FUNCTION for adding Player Name */
@@ -60,7 +60,7 @@ function handlePlayerName (e) {
     document.getElementById("insert-player-name").innerText= playerName;
     (document.getElementById("play-round-modal-2")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
-    (document.getElementById("round-number-display")).style.display = "block";
+    (document.getElementById("round-number-section")).style.display = "block";
 }
 
 /** FUNCTION that runs each round */
@@ -135,7 +135,7 @@ function refreshGame() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("launch-game-modal")).style.display = "block";
-    (document.getElementById("round-number-display")).style.display = "none";
+    (document.getElementById("round-number-section")).style.display = "none";
     
     wins.innerText="0";
     lose.innerText="0";
@@ -180,7 +180,7 @@ function updateLose() {
 /**FUNCTION that will 
  * display GAME OVER MODAL after 5 rounds and show final result of game
  */
-function gameOver() {
+ function gameOver() {
     let finalScoreWin = document.getElementById("user-win").innerText;
     let finalScoreLose = document.getElementById("user-lose").innerText;
     let finalScoreDraw = document.getElementById("draw").innerText;
@@ -194,5 +194,5 @@ function gameOver() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "block";
-    (document.getElementById("round-number-display")).style.display = "none";    
+    (document.getElementById("round-number-section")).style.display = "none";    
 }
