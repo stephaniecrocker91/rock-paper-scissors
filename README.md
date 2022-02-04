@@ -93,49 +93,48 @@ The initial homepage consists of:
 
 * * * 
   
-### Our Services Page - _ourservices.html_
+### Playing first round- _play-round-1 modal_
 
 * * *
 
-Our services section is set up on another HTML page. Its aim is to describe in detail the services we provide. It is structured as follows:
+When clicking "let's rock!" in the initial form, you are taken to the initial play round modal. This displays:
 
-*   A header: "Our Bespoke Packages", which clearly describes what we offer.
-*   A sub-header: lists the specific services we offer: Meditation, Yoga, Pilates, Hiit and Nutrition. Each service listed hyperlinks to the section of the page with a more detailed description of that particular service.
-*   A small paragraph: in a white box detailing how the service packages.
-*   This first section has an image-background that is easy on the eye, subtle and allows the text over it to be easily read.
+* A short subtitle displaying Round number 1. This allows the user to immediatey recognise there will be a set amount of rounds and will make the game progress easy to track. 
+* Rock, Paper and Scissors interactive buttons. These are styled in the same bright bold colors, fun font, and are displayed clearly in the center of the page.
+
 
 <img src="assets/images/ourservices-1.png" width="500px">
 
-Each one of the hyperlinks at the top of this page take the user to a sub-section containing:
+ 
 
-*   A header: with the service name (E.g.: MINDFULNESS & MEDITATION). The background color is dusty pink, and the font is uppercase. It makes for a clear distinction between the different services sections.
-*   An image: that portrays the service to the user.
-*   A few paragraphs: about the service and it's benefits. On small screens (mobile and some tablets) the paragraph is directly below the image. On larger displays, the paragraphs are to the right of the image.
-*   A "Back to Top" link: This hyperlink which takes the user back to the top of the page. It is italicized and underlined so as to stand out.
-
-<img src="assets/images/clear-services2.png" width="500px">
-
-* * *   
-
-### Contact Us Page - contactform.html
+### After initial Rock, paper, scissors selection - _play-round-2 modal_
 
 * * *
 
-The contact form section is also set up on another HTML page. The aim of this contact form, is for the user to contact us regarding interest. It consists of:
+After the user selecting their first choice of Rock, Paper or Scissors, they are lead to the next modal(play-round-2 modal). There are only a couple of additions to this display:
 
-*   A header: "Contact Us", which clearly describes the purpose of this section.
-*   A background image: that is aesthetically pleasing and makes the form stand out.
-* A header for the form: Enquire further:
-*   The form: Containing
-    *   Required text input field boxes and labels (Name, Surname, Email and Contact number).
-    *   Paragraph explaining the next checkbox section is optional.
-    *   Optional checkboxes for interested services (Meditation, Yoga, Pilates, Hiit, Nutrition).
-    *   A Send! button which submits the form.
-    *   Please note: all input fields (except for the checkbox) are required to be filled out to be able to submit the form.
-*   The contact form is simple, easy to read, and emphasizes the services available to the user.
+*   The same subtitle displaying Round Number: x. The round has been updated using Javascript. It will increment +1 each time, untill reaching Round 5.
+*   A visual represnetation of the User and Computer's selection. This is divided into:
+    * User and computer image of their selection (rock, paper, or scissors). They are centered and facing each other as they would in real life.
+    * A label underneath each image. The User's player label displays the Name that has been input into the form. The computers label simply displays _Computer:_
+*   A div containing the previous rounds result:
+    *   An short alert message displaying previous round result: You win!, You lose!, or You draw!
+    *   A small box within the large div clearly displaying the Game tally of win, lose, and draw. It is styled in contrasting colors for readability.
+*   The selection buttons for the next round remain displayed below for game continuity.
 <img src="assets/images/contact-us-page.png" width="500px">
   
 * * * 
+
+### Game Over Modal: displayed after Round 5 - _game-over-modal_
+
+* * *
+
+After the user has selected their final choice in Round 5, they are redirected to the Game Over Modal. This displays:
+
+* Final Alert message dsplaying the game result: You win! You lose! You draw! 
+* A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clickng this button will trigger a function reseting the game back to _launch-game-modal_
+
+
 
 ## SKELETON:
 
