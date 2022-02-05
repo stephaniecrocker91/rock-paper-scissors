@@ -47,6 +47,14 @@ h2 {
     width: 7rem;
 }
 
+.selection-button:hover,
+#button-name:hover,
+#refresh-button:hover {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
 
 /* Styling for launch-game-modal */
 #launch-game-modal {
@@ -69,13 +77,10 @@ h2 {
     margin-top: 10vh;
 }
 
-#rockpaperscissorsimage {
-    width: 90vw;
-    margin-top: 10vh;
-    
+.rockpaperscissorsimage {
+    width: 20vw;
+    margin-top: 10vh;    
 }
-
-
 
 
 /*Game Modal Styling here*/

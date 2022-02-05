@@ -182,6 +182,4 @@ function updateLose() {
  */
 function refreshGame() {
     location.reload();
-    
-   
 }
