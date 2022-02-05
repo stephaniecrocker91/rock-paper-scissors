@@ -60,6 +60,7 @@ function handlePlayerName(e) {
     (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
     (document.getElementById("score-area")).style.display = "none";
+    
 }
 
 /** FUNCTION that runs each round */

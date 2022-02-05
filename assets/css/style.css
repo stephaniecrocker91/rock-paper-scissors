@@ -11,7 +11,7 @@ body {
 
 #header {
     background-color:rgb(144, 238, 144);
-    height: 20vh;
+    height: fit-content;
     display: grid;
     
 }
@@ -101,8 +101,8 @@ h2 {
 }
 #user-image img,
 #computer-image img {
-    width: 25vw;
-    margin-top: 1.5rem;
+    width: 35vw;
+    margin-top: 8vh;
 }
 
 
