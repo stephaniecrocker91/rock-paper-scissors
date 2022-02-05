@@ -170,7 +170,10 @@ function updateLose() {
         (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
     (document.getElementById("play-round-modal-1")).style.display = "none";
-    (document.getElementById("play-round-modal-2")).style.display = "none";
+    // (document.getElementById("play-round-modal-2")).style.display = "none";
+    // TEST BY JO
+    (document.getElementById("selected-choices-section")).style.display = "none";
+    (document.getElementById("alert-section")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block"; 
     (document.getElementById("game-over-modal")).style.display = "block";   
 }
