@@ -4,6 +4,7 @@ body {
     font-family: 'Shadows Into Light', 'sans';
     letter-spacing: 2px;
     text-align: center;
+    margin: 0;
 }
 
 /* Styling for header */
@@ -28,11 +29,6 @@ h2 {
 
 /*Styling for buttons */
 
-.selection-button {
-    width: 7rem;
-}
-
-
 .selection-button,
 #button-name,
 #refresh-button {
@@ -47,21 +43,35 @@ h2 {
 
 }
 
+.selection-button {
+    width: 7rem;
+}
+
+
 /* Styling for launch-game-modal */
 #launch-game-modal {
-    height: 60vh;
     display: grid;
+    height: 80vh;
 }
 
 
 #form-div {
-   align-self: center;
-    justify-self: center;
+    align-self: center;
     font-size: 2.8vh;
+}
+
+#player-name-form {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#player-name-form #submit-div {
+    margin-top: 10vh;
 }
 
 #rockpaperscissorsimage {
     width: 90vw;
+    margin-top: 10vh;
     
 }
 
@@ -84,20 +94,23 @@ h2 {
 #user-image img,
 #computer-image img {
     width: 25vw;
+    margin-top: 1.5rem;
 }
 
 
 /* You lose, you win, you draw alert here*/
-.black-box {
+#alert-section{
     background-color: black;
     color: whitesmoke;
+    height: fit-content;
+    font-size: 4vh;
     display: grid;
-    height: 20vh;
+    
 }
 
 #alert-result {
     align-self: center;
-    font-size: 4vh;
+    justify-self: center;
     
 }
 
@@ -125,7 +138,6 @@ h2 {
 #button-area-2 {
     align-self: center;
     justify-self: center;
-    
 }
 
 
