@@ -181,20 +181,7 @@ function updateLose() {
 /** FUNCTION to REFRESH GAME back to start
  */
 function refreshGame() {
-    (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("play-round-modal-1")).style.display = "none";
-    (document.getElementById("play-round-modal-2")).style.display = "none";
-    (document.getElementById("launch-game-modal")).style.display = "block";
-    (document.getElementById("score-area")).style.display = "none"; 
-
-    wins.innerText = "0";
-    lose.innerText = "0";
-    draw.innerText = "0";
-    roundNumberDisplay.innerText = "1";
-    computerChoiceDisplay.innerText = "";
-    userChoiceDisplay.innerText = "";
-    alertResult.innerText = "";
-    (document.getElementById("player-name")).value = "";
-    document.getElementById("insert-player-name").innerText = "";
-
+    location.reload();
+    
+   
 }
