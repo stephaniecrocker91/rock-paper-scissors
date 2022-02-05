@@ -182,7 +182,7 @@ function refreshGame() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("launch-game-modal")).style.display = "block";
-    (document.getElementById("round-number-section")).style.display = "none";
+    (document.getElementById("score-area")).style.display = "none"; 
 
     wins.innerText = "0";
     lose.innerText = "0";
