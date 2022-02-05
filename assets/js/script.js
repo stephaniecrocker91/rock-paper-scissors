@@ -3,10 +3,6 @@
 //Gets span where Round Number will be displayed.
 let roundNumberDisplay = document.getElementById("round-number");
 
-//Where we store our computers choice and users choice
-let userSelectedChoice;
-let computerSelectedChoice;
-
 //Gets span where User Choice & Computer Choice will be displayed as image
 let userChoiceDisplay = document.getElementById("user-image");
 let computerChoiceDisplay = document.getElementById("computer-image");
@@ -19,19 +15,23 @@ let draw = document.getElementById("draw");
 //Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
 let alertResult = document.getElementById("alert-result");
 
+//Where we store our computers choice and users choice
+let userSelectedChoice;
+let computerSelectedChoice;
 
 
 
 //EVENT LISTENERS
+
+// Event listener for submit button in form
+let form = document.getElementById("player-name-form");
+form.addEventListener("submit", handlePlayerName);
+
 //Event listener for Rock, Paper, Scissor selection buttons
 let selectionButton = document.getElementsByClassName("selection-button");
 for (i of selectionButton) {
     i.addEventListener("click", playRound);
 }
-
-// Event listener for submit button in form
-let form = document.getElementById("player-name-form");
-form.addEventListener("submit", handlePlayerName);
 
 //Event listener for Refresh Button
 let refreshButton = document.getElementById("refresh-button");
@@ -49,26 +49,25 @@ function launchGame() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("round-number-section")).style.display = "none"; 
+    (document.getElementById("score-area")).style.display = "none";
 }
 
 /** FUNCTION for adding Player Name */
-function handlePlayerName (e) {
+function handlePlayerName(e) {
     e.preventDefault();
     let playerName = (document.getElementById("player-name")).value;
-    console.log(playerName)
-    document.getElementById("insert-player-name").innerText= playerName;
-    (document.getElementById("play-round-modal-2")).style.display = "block";
+    (document.getElementById("insert-player-name")).innerText = playerName;
+    (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
-    (document.getElementById("round-number-section")).style.display = "block";
+    (document.getElementById("score-area")).style.display = "none";
 }
 
 /** FUNCTION that runs each round */
 function playRound(e) {
+    updateRound();
     userChoice(e);
     computerChoice();
     compareChoice();
-    updateRound();
 }
 
 
@@ -85,17 +84,18 @@ function updateRound() {
 /** FUNCTION that selects the targets ID,
  * stores it in userSelectedChoice and displays
  * in userChoiceDisplay. */
- function userChoice(e) {
+function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerHTML = `<img src="./assets/images/${userSelectedChoice}.jpg" alt="${userSelectedChoice}">`;
-    (document.getElementById("play-round-modal-1")).style.display = "block";
+    (document.getElementById("play-round-modal-2")).style.display = "block";
+    (document.getElementById("score-area")).style.display = "block";
 }
 
 
 /** FUNCTION that randomly generates 
  * the computers choice, stores it in computerSelectedChoice
  * and displays it in computerChoiceDisplay */
- function computerChoice() {
+function computerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
         computerSelectedChoice = 'rock';
@@ -109,7 +109,7 @@ function updateRound() {
 
 
 /** FUNCTION that compares user choice and computer choice, determining
- * the result and displaying an alert message below: ("You win!", "You lose!" or "You draw!") */
+ * the result and displaying an alert message of: ("You win!", "You lose!" or "You draw!") */
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
         alertResult.innerHTML = "You draw!";
@@ -125,28 +125,6 @@ function compareChoice() {
         alertResult.innerHTML = "You lose!";
         updateLose();
     }
-}
-
-
-/** FUNCTION to REFRESH GAME back to start
- */
-function refreshGame() {
-    (document.getElementById("game-over-modal")).style.display = "none";
-    (document.getElementById("play-round-modal-1")).style.display = "none";
-    (document.getElementById("play-round-modal-2")).style.display = "none";
-    (document.getElementById("launch-game-modal")).style.display = "block";
-    (document.getElementById("round-number-section")).style.display = "none";
-    
-    wins.innerText="0";
-    lose.innerText="0";
-    draw.innerText="0";
-    roundNumberDisplay.innerText = "1";
-    computerChoiceDisplay.innerText ="";
-    userChoiceDisplay.innerText="";
-    alertResult.innerText="";
-    (document.getElementById("player-name")).value="";
-    document.getElementById("insert-player-name").innerText= "";
-
 }
 
 
@@ -193,6 +171,27 @@ function updateLose() {
     }
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
-    (document.getElementById("game-over-modal")).style.display = "block";
-    (document.getElementById("round-number-section")).style.display = "none";    
+    (document.getElementById("score-area")).style.display = "block"; 
+    (document.getElementById("game-over-modal")).style.display = "block";   
+}
+   
+/** FUNCTION to REFRESH GAME back to start
+ */
+function refreshGame() {
+    (document.getElementById("game-over-modal")).style.display = "none";
+    (document.getElementById("play-round-modal-1")).style.display = "none";
+    (document.getElementById("play-round-modal-2")).style.display = "none";
+    (document.getElementById("launch-game-modal")).style.display = "block";
+    (document.getElementById("round-number-section")).style.display = "none";
+
+    wins.innerText = "0";
+    lose.innerText = "0";
+    draw.innerText = "0";
+    roundNumberDisplay.innerText = "1";
+    computerChoiceDisplay.innerText = "";
+    userChoiceDisplay.innerText = "";
+    alertResult.innerText = "";
+    (document.getElementById("player-name")).value = "";
+    document.getElementById("insert-player-name").innerText = "";
+
 }

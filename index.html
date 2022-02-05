@@ -15,7 +15,6 @@
     </div>
     <!-- Launch Game Modal here-->
     <div id="launch-game-modal">
-
         <div id="form-div">
             <img src="./assets/images/rock_paper_scissors.jpg" alt="" id="rockpaperscissorsimage">
             <form id="player-name-form" method="POST" action="/login/">
@@ -27,11 +26,20 @@
     </div>
 
     <!-- Play Round Modal here -->
-    <div id="round-number-section">
-        <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
-        <img src="./assets/images/underline.png" alt="pen marker underline">
-    </div>
     <div id="play-round-modal-1">
+        <div id="round-number-section">
+            <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
+            <img src="./assets/images/underline.png" alt="pen marker underline">
+        </div>
+        <div id="button-area">
+            <div id="button-area-2">
+                <button class="selection-button" id="rock">rock</button>
+                <button class="selection-button" id="paper">paper</button>
+                <button class="selection-button" id="scissors">scissors</button>
+            </div>
+        </div>
+    </div>
+    <div id="play-round-modal-2">
         <div id="selected-choices-section">
             <div class="inline">
                 <span id="user-image"></span>
@@ -42,28 +50,16 @@
                 <p>Computer: </p>
             </div>
         </div>
-        <div class="black-box">
-            <div id="alert-section">
-                <h2 id="alert-result"></h2>
-            </div>
-            <div id="score-area">
-                <p class="inline">Win: <span id="user-win">0</span></p>
-                <p class="inline">Draw: <span id="draw">0</span></p>
-                <p class="inline">Lose: <span id="user-lose">0</span></p>
-            </div>
+        <div id="alert-section" class="black-box">
+            <h2 id="alert-result"></h2>
         </div>
     </div>
-    <div id="play-round-modal-2">
-        <div id="button-area">
-            <div id="button-area-2">
-                <button class="selection-button" id="rock">rock</button>
-                <button class="selection-button" id="paper">paper</button>
-                <button class="selection-button" id="scissors">scissors</button>
-            </div>
-        </div>
-
-
+    <div id="score-area">
+        <p class="inline">Win: <span id="user-win">0</span></p>
+        <p class="inline">Draw: <span id="draw">0</span></p>
+        <p class="inline">Lose: <span id="user-lose">0</span></p>
     </div>
+  
     <!-- Game Over Modal here -->
     <div id="game-over-modal">
         <h2 id="game-over-result"></h2>
