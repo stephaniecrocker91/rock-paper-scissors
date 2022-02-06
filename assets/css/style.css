@@ -10,22 +10,24 @@ body {
 /* Styling for header */
 
 #header {
-    background-color:rgb(144, 238, 144);
+    background-color: rgb(144, 238, 144);
     height: fit-content;
     display: grid;
-    
 }
 
 h1 {
-    align-self: center;
-    justify-self: center;
     font-size: 6vh;
- 
 }
 
 h2 {
     font-size: 4vh;
 }
+
+.large-underline-text {
+    font-size: larger;
+    text-decoration: underline;
+}
+
 
 /*Styling for buttons */
 
@@ -34,9 +36,8 @@ h2 {
 #refresh-button {
     background: none;
     border: none;
-    background-color:  rgb(144, 238, 144, 1);
+    background-color: rgb(144, 238, 144, 1);
     padding: 0.8rem;
-    margin-top: 1rem;
     font-family: 'Shadows Into Light', 'sans';
     font-size: 1.5rem;
     border-radius: 20%;
@@ -58,28 +59,23 @@ h2 {
 
 /* Styling for launch-game-modal */
 #launch-game-modal {
-    display: grid;
     height: fit-content;
-
 }
 
 #form-div {
-    align-self: center;
     font-size: 2.8vh;
 }
 
-#player-name-form {
-    margin-top: 5vh;
-    
-}
-
-#submit-div {
+#player-name-form,
+#submit-div,
+.rockpaperscissorsimage {
     margin-top: 5vh;
 }
 
 .rockpaperscissorsimage {
     width: 20vw;
-    margin-top: 5vh;    
+    margin: 5vw;
+    margin-left: 5vw;
 }
 
 
@@ -101,12 +97,13 @@ h2 {
 #user-round-1-rock img {
     transform: rotateY(180deg);
 }
+
 #user-image img,
 #computer-image img,
 #user-round-1-rock img,
-#computer-round-1-rock img{
+#computer-round-1-rock img {
     width: 35vw;
-   margin-top: 4vh;
+    margin-top: 4vh;
 }
 
 .inline p {
@@ -115,19 +112,12 @@ h2 {
 }
 
 /* You lose, you win, you draw alert here*/
-#alert-section{
+#alert-section {
     background-color: black;
     color: whitesmoke;
     height: fit-content;
     font-size: 4vh;
     display: grid;
-    
-}
-
-#alert-result {
-    align-self: center;
-    justify-self: center;
-    
 }
 
 /*Styling for score display: win, lose, draw tally */
@@ -139,15 +129,9 @@ h2 {
 }
 
 #score-area {
-    font: 0.5rem;;
+    font: 0.5rem;
     background-color: whitesmoke;
     color: black;
-    height:fit-content;
+    height: fit-content;
     margin-top: 4vh;
 }
-
-
-
-
-
-
