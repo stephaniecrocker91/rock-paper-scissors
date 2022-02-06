@@ -47,9 +47,11 @@ refreshButton.addEventListener("click", refreshGame);
 /** FUNCTION for Launch Game Modal */
 function launchGame() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
+    (document.getElementById("round-1-rocks")).style.display = "none";
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
     (document.getElementById("score-area")).style.display = "none";
+    
 }
 
 /** FUNCTION for adding Player Name */
@@ -58,6 +60,7 @@ function handlePlayerName(e) {
     let playerName = (document.getElementById("player-name")).value;
     (document.getElementById("insert-player-name")).innerText = playerName;
     (document.getElementById("play-round-modal-1")).style.display = "block";
+    (document.getElementById("round-1-rocks")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
     (document.getElementById("score-area")).style.display = "none";
     
@@ -90,6 +93,7 @@ function userChoice(e) {
     userChoiceDisplay.innerHTML = `<img src="./assets/images/${userSelectedChoice}.jpg" alt="${userSelectedChoice}">`;
     (document.getElementById("play-round-modal-2")).style.display = "block";
     (document.getElementById("score-area")).style.display = "block";
+    (document.getElementById("round-1-rocks")).style.display = "none";
 }
 
 
