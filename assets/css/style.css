@@ -96,11 +96,14 @@ h2 {
 
 /* User and computer image choice*/
 
-#user-image img {
+#user-image img,
+#user-round-1-rock img {
     transform: rotateY(180deg);
 }
 #user-image img,
-#computer-image img {
+#computer-image img,
+#user-round-1-rock img,
+#computer-round-1-rock img{
     width: 35vw;
     margin-top: 8vh;
 }
