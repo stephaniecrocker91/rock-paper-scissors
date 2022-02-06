@@ -114,13 +114,14 @@ When clicking "let's rock!" in the initial form, you are taken to the initial pl
 After the user selecting their first choice of Rock, Paper or Scissors, they are lead to the next modal(play-round-2 modal). There are only a couple of additions to this display:
 
 *   The same subtitle displaying Round Number: x. The round has been updated using Javascript. It will increment +1 each time, untill reaching Round 5.
-*   A visual represnetation of the User and Computer's selection. This is divided into:
+*   The selection buttons for the next round remain displayed below for game continuity.
+*   A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
+*   A visual representation of the User and Computer's selection. This is divided into:
     * User and computer image of their selection (rock, paper, or scissors). They are centered and facing each other as they would in real life.
     * A label underneath each image. The User's player label displays the Name that has been input into the form. The computers label simply displays _Computer:_
-*   A div containing the previous rounds result:
-    *   An short alert message displaying previous round result: You win!, You lose!, or You draw!
-    *   A small box within the large div clearly displaying the Game tally of win, lose, and draw. It is styled in contrasting colors for readability.
-*   The selection buttons for the next round remain displayed below for game continuity.
+*   A div containing the previous rounds result: An short alert message displaying previous round result: You win!, You lose!, or You draw!
+
+
 <img src="assets/images/contact-us-page.png" width="500px">
   
 * * * 
@@ -131,6 +132,7 @@ After the user selecting their first choice of Rock, Paper or Scissors, they are
 
 After the user has selected their final choice in Round 5, they are redirected to the Game Over Modal. This displays:
 
+* A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
 * Final Alert message dsplaying the game result: You win! You lose! You draw! 
 * A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clickng this button will trigger a function reseting the game back to _launch-game-modal_
 
@@ -141,12 +143,14 @@ After the user has selected their final choice in Round 5, they are redirected t
 -----------
 
 ### WIREFRAMES:
-* I began designing from a mobile display. I wanted my nav and footer to always be displayed. I wanted a homepage image to load up immediately. I wanted the form section to have a background image.
+* I began designing from a mobile display. I wanted the site to look very minimalistic, with big bright buttons and visual representations of rock, paper, scissors. 
 
-<img src="assets/images/wireframe-mobile1.png" width="200px">
-<img src="assets/images/wireframe-mobile2.png" width="200px">
-<img src="assets/images/wireframe-mobile3.png" width="200px">
-<img src="assets/images/wireframe-mobile4.png" width="200px">
+<img src="./assets/images/wireframe-mobile-launch.png" width="200px">
+<img src="./assets/images/wireframe-mobile-gameround.png" width="200px">
+<img src="./assets/images/wireframe-mobile-gameover.png" width="200px">
+<img src="./assets/images/wireframe-ldisplay-launch.png" width="200px">
+<img src="./assets/images/wireframe-ldisplay-gameround.png" width="200px">
+<img src="./assets/images/wireframe-ldisplay-gameover.png" width="200px">
 
 * For the wide screen display, I had a rough idea of how I wanted the Homepage and services section displayed. I wanted the image in the home page to be large and inviting, with introduction to the site below. I wanted the services section to be laid out with HEADER, Image to the left and paragraph to the right.
 
