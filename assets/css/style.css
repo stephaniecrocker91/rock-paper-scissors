@@ -19,7 +19,7 @@ body {
 h1 {
     align-self: center;
     justify-self: center;
-    font-size: 5vh;
+    font-size: 6vh;
  
 }
 
@@ -59,9 +59,9 @@ h2 {
 /* Styling for launch-game-modal */
 #launch-game-modal {
     display: grid;
-    height: 80vh;
-}
+    height: fit-content;
 
+}
 
 #form-div {
     align-self: center;
@@ -69,17 +69,17 @@ h2 {
 }
 
 #player-name-form {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    
 }
 
-#player-name-form #submit-div {
-    margin-top: 10vh;
+#submit-div {
+    margin-top: 5vh;
 }
 
 .rockpaperscissorsimage {
     width: 20vw;
-    margin-top: 10vh;    
+    margin-top: 5vh;    
 }
 
 
@@ -138,6 +138,7 @@ h2 {
     background-color: whitesmoke;
     color: black;
     height:fit-content;
+    margin-top: 10vh;
 }
 
 /* Rock paper scissors selection buttons*/
