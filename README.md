@@ -145,17 +145,111 @@ After the user has selected their final choice in Round 5, they are redirected t
 ### WIREFRAMES:
 * I began designing from a mobile display. I wanted the site to look very minimalistic, with big bright buttons and visual representations of rock, paper, scissors. 
 
-<img src="./assets/images/wireframe-mobile-launch.png" width="200px">
-<img src="./assets/images/wireframe-mobile-gameround.png" width="200px">
-<img src="./assets/images/wireframe-mobile-gameover.png" width="200px">
-<img src="./assets/images/wireframe-ldisplay-launch.png" width="200px">
-<img src="./assets/images/wireframe-ldisplay-gameround.png" width="200px">
-<img src="./assets/images/wireframe-ldisplay-gameover.png" width="200px">
+<img src="./assets/images/wireframe-mobile-display.png" width="800px">
 
-* For the wide screen display, I had a rough idea of how I wanted the Homepage and services section displayed. I wanted the image in the home page to be large and inviting, with introduction to the site below. I wanted the services section to be laid out with HEADER, Image to the left and paragraph to the right.
 
-<img src="assets/images/wireframe-laptop1.png" width="300px">
-<img src="assets/images/wireframe-laptop2.png" width="300px">
+* For the wide screen display, I wanted a very similar layout, but a bit more widespread. 
+
+<img src="./assets/images/wireframe-large-display.png" width="1000px">
+
 
 
 * * * 
+
+## SURFACE:
+
+* * *
+
+Before starting, I created the wireframes displayed above. I knew I wanted the game to be minimalistic, fun, and bright. 
+
+
+### Colors
+
+* * *
+
+For the purpose of this game, I wanted to choose very block, bright, almost cartoon-like colors that would work well together.
+I came up with the following pallette:
+<img src="assets/images/green.png" width="300px">
+<img src="assets/images/black.png" width="300px">
+<img src="assets/images/whitesmoke.png" width="300px">
+
+
+* * * 
+
+### Typography
+
+* * *
+
+Shadows into Light: I wanted to use a playful font that would go nicely with the game. It is fun, relaxed, cartoon-like, and it has some personality! My fall-back font is Sans, which I think also goes nicely with the site's feel and purpose.
+
+### Images and Icons
+
+* * *
+<img src="assets/images/rock_paper_scissors.jpg" width="600px">
+
+*   Sticking to my cartoon-like inspiration for this game, I chose incredibly minimalistic icons for the Rock, paper, and scissors. These images almost feel like emojis, they are modern and fun. 
+*   I also chose to keep the palette simple with black and white. It is bold and the user is instantly drawn to them.
+
+* * * 
+
+FEATURES:
+---------
+
+* * *
+
+### Current features
+
+*   Launch Game Page: This is the page that initially loads when you first arrive to the site. 
+    * Header: "Rock, Paper, Scissors"
+    * Image of rock, paper and scissors
+    * Player name input form (required)
+    * Submit button labelled "Let's Rock!"
+*   Play Round Modal: which loads once the user has submited the form. The form takes the player name and uses it below.
+    * Same header
+    * Round number
+    * 3 clickable buttons labelled: Rock, Paper and Scissors.
+    * 2 ROCK images facing each other
+*   As from Round 2... the same as above, plus...
+    * The round number will update itself each round!
+    * A tally of the current score (which will update round after round): For example _Win: 0 Draw: 1 Lose: 2_
+    * A black box with the outcome of the previous play: For example: _You Draw!_
+* After the final Round 5...
+    * The final score tally
+    * The final game result. For example: _Congratulations, you win!_
+    * A Refresh button, to play again! (This takes the user back to the start)
+
+* * * 
+
+### Future features
+
+*   A Page containing a complimentary pre-recorded taster sessions: Yoga, Pilates, Meditation, Hiit, and some recipes.
+
+* * * 
+
+## LANGUAGES:
+
+* * *
+
+*   HTML5
+*   CSS
+
+* * * 
+
+## OTHER TECHNOLOGIES, FRAMEWORKS & LIBRARIES:
+
+
+* * *
+
+*   [Google Fonts](https://fonts.google.com/)
+*   [Font Awesome](https://fontawesome.com/)
+*   [GitHub](https://github.com/)
+*   [GitPod](https://www.gitpod.io/)
+*   [Coolors](https://coolors.co/)
+*   [Pexels](https://www.pexels.com/)
+*   [Stack Overflow](https://stackoverflow.com/)
+*   [Code beautify](https://codebeautify.org/html-to-markdown)
+*   [Compress Jpeg](https://compressjpeg.com/)
+
+* * * 
+
+## TESTING, BUGS & FIXES:
