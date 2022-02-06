@@ -172,6 +172,12 @@ h2 {
         width: 240px;
         margin-top: 4vh;
     }
+    
+    .selection-button {
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+    
     .selection-button,
     #button-name,
     #refresh-button {
@@ -189,6 +195,10 @@ h2 {
 
 /* large screen displays*/
 
+@media screen and (min-width: 900px) {
+    
+
+}
 
 
 
