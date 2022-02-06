@@ -67,15 +67,14 @@ h2 {
 }
 
 #player-name-form,
-#submit-div,
-.rockpaperscissorsimage {
+#submit-div{
     margin-top: 5vh;
 }
 
 .rockpaperscissorsimage {
     width: 20vw;
-    margin: 5vw;
-    margin-left: 5vw;
+ 
+    margin: 5vh 5vw 0 5vw;
 }
 
 
