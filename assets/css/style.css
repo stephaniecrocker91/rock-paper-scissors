@@ -87,6 +87,7 @@ h2 {
 
 #round-number-display {
     margin-bottom: 0;
+    margin-top: 3vh;
 }
 
 #round-number-section img {
@@ -105,9 +106,13 @@ h2 {
 #user-round-1-rock img,
 #computer-round-1-rock img{
     width: 35vw;
-    margin-top: 8vh;
+   margin-top: 4vh;
 }
 
+.inline p {
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
 
 /* You lose, you win, you draw alert here*/
 #alert-section{
@@ -138,19 +143,9 @@ h2 {
     background-color: whitesmoke;
     color: black;
     height:fit-content;
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
-/* Rock paper scissors selection buttons*/
-#button-area {
-    height: 10vh;
-    display:grid;
-}
-
-#button-area-2 {
-    align-self: center;
-    justify-self: center;
-}
 
 
 
