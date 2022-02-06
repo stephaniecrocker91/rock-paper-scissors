@@ -73,7 +73,6 @@ h2 {
 
 .rockpaperscissorsimage {
     width: 20vw;
- 
     margin: 5vh 5vw 0 5vw;
 }
 
@@ -115,7 +114,6 @@ h2 {
     background-color: black;
     color: whitesmoke;
     height: fit-content;
-    font-size: 4vh;
     display: grid;
 }
 
@@ -128,7 +126,6 @@ h2 {
 }
 
 #score-area {
-    font: 0.5rem;
     background-color: whitesmoke;
     color: black;
     height: fit-content;
@@ -136,8 +133,11 @@ h2 {
 }
 
 /* Media Queries*/
-
+/* Smallest phone displays*/
 @media screen and (max-width: 355px) {
+    #round-number-section img {
+        height: 40px;
+    }
     .selection-button {
         width: 5rem;
         font-size: 1rem;
@@ -147,11 +147,49 @@ h2 {
     }
 
     .inline {
-        display: inline-block;
         margin: 0 3%;
-        font-size: 1.2em;
+        font-size: 1.1em;
+    }
+}
+/* iPad displays*/
+@media screen and (min-width: 667px) {
+    h1 {
+        font-size: 70px;
+    }
+    
+    h2 {
+        font-size: 50px;
+     }
+    
+    .rockpaperscissorsimage {
+        width: 130px;
+        margin: 5vh 40px 0 40px;
+    }
+    #user-image img,
+    #computer-image img,
+    #user-round-1-rock img,
+    #computer-round-1-rock img {
+        width: 240px;
+        margin-top: 4vh;
+    }
+    .selection-button,
+    #button-name,
+    #refresh-button {
+        width: 10rem;
+        font-size: 2rem;
+    }
+    .selection-button:hover,
+    #button-name:hover,
+    #refresh-button:hover {
+        font-size: 2.5rem;
     }
 
-
 }
+
+
+/* large screen displays*/
+
+
+
+
 
