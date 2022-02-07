@@ -1,4 +1,4 @@
-//GLOBAL VARIABLES
+//-------------------GLOBAL VARIABLES-------------------
 
 //Gets span where Round Number will be displayed.
 let roundNumberDisplay = document.getElementById("round-number");
@@ -19,9 +19,7 @@ let alertResult = document.getElementById("alert-result");
 let userSelectedChoice;
 let computerSelectedChoice;
 
-
-
-//EVENT LISTENERS
+//-------------------EVENT LISTENERS-------------------
 
 // Event listener for submit button in form
 let form = document.getElementById("player-name-form");
@@ -37,12 +35,7 @@ for (i of selectionButton) {
 let refreshButton = document.getElementById("refresh-button");
 refreshButton.addEventListener("click", refreshGame);
 
-
-
-
-
-//FUNCTIONS BELOW!
-
+//-------------------FUNCTIONS BELOW!-------------------
 
 /** FUNCTION for Launch Game Modal */
 function launchGame() {
@@ -74,7 +67,6 @@ function playRound(e) {
     compareChoice();
 }
 
-
 /** FUNCTION that displays Round Number */
 function updateRound() {
     lastRound = parseInt(roundNumberDisplay.innerText);
@@ -83,7 +75,6 @@ function updateRound() {
         gameOver();
     }
 }
-
 
 /** FUNCTION that selects the targets ID,
  * stores it in userSelectedChoice and displays
@@ -94,7 +85,6 @@ function userChoice(e) {
     (document.getElementById("play-round-modal-2")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "none";
 }
-
 
 /** FUNCTION that randomly generates 
  * the computers choice, stores it in computerSelectedChoice
@@ -110,7 +100,6 @@ function computerChoice() {
     }
     computerChoiceDisplay.innerHTML = `<img src="./assets/images/${computerSelectedChoice}.jpg" alt="${computerSelectedChoice}">`;
 }
-
 
 /** FUNCTION that compares user choice and computer choice, determining
  * the result and displaying an alert message of: ("You win!", "You lose!" or "You draw!") */
@@ -131,7 +120,6 @@ function compareChoice() {
     }
 }
 
-
 /** FUNCTION that increments the WIN
  * score by 1 point, each time user wins
  */
@@ -139,7 +127,6 @@ function updateWin() {
     oldScoreWin = parseInt(wins.innerText);
     document.getElementById("user-win").innerText = oldScoreWin + 1;
 }
-
 
 /** FUNCTION that increments the DRAW
  * score by 1 point, each time user wins
@@ -149,7 +136,6 @@ function updateDraw() {
     document.getElementById("draw").innerText = oldScoreDraw + 1;
 }
 
-
 /** FUNCTION that increments the LOSE
  * score by 1 point, each time user wins
  */
@@ -157,7 +143,6 @@ function updateLose() {
     oldScoreLose = parseInt(lose.innerText);
     document.getElementById("user-lose").innerText = oldScoreLose + 1;
 }
-
 
 /**FUNCTION that will 
  * display GAME OVER MODAL after 5 rounds and show final result of game

@@ -6,74 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
 </head>
 
 <body onload="launchGame()">
-    <div id="header">
-        <h1>Rock, Paper, Scissors</h1>
-    </div>
+    <header>
+        <div id="header">
+            <h1>Rock, Paper, Scissors</h1>
+        </div>
+    </header>
     <!-- Launch Game Modal here-->
-    <div id="launch-game-modal">
-        <div id="form-div">
-            <img src="./assets/images/rocklogo.jpg" alt="" class="rockpaperscissorsimage">
-            <img src="./assets/images/paperlogo.jpg" alt="" class="rockpaperscissorsimage">
-            <img src="./assets/images/scissorslogo.jpg" alt="" class="rockpaperscissorsimage">
-            <form id="player-name-form" method="POST" action="/login/">
-                <label for="player-name">Player name: </label>
-                <div><input type="text" id="player-name" required></div>
-                <div id="submit-div"><input type="submit" value="Let's rock!" id="button-name"></div>
-            </form>
+    <main>
+        <div id="launch-game-modal">
+            <div id="form-div">
+                <img src="./assets/images/rocklogo.jpg" alt="" class="rockpaperscissorsimage">
+                <img src="./assets/images/paperlogo.jpg" alt="" class="rockpaperscissorsimage">
+                <img src="./assets/images/scissorslogo.jpg" alt="" class="rockpaperscissorsimage">
+                <form id="player-name-form" method="POST" action="/login/">
+                    <label for="player-name">Player name: </label>
+                    <div><input type="text" id="player-name" required></div>
+                    <div id="submit-div"><input type="submit" value="Let's rock!" id="button-name"></div>
+                </form>
+            </div>
         </div>
-    </div>
-
+    </main>
     <!-- Play Round Modal here -->
-    <div id="play-round-modal-1">
-        <div id="round-number-section">
-            <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
-            <img src="./assets/images/underline.png" alt="pen marker underline">
-        </div>
-        <div id="button-area">
+    <main>
+        <div id="play-round-modal-1">
+            <div id="round-number-section">
+                <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
+                <img src="./assets/images/underline.png" alt="pen marker underline">
+            </div>
+            <div id="button-area">
                 <button class="selection-button" id="rock">rock</button>
                 <button class="selection-button" id="paper">paper</button>
                 <button class="selection-button" id="scissors">scissors</button>
-        </div>
-    </div>
-    <div id="score-area">
-        <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
-        <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
-        <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
-    </div>
-    <div id="round-1-rocks">
-        <div class="inline">
-            <span id="user-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
-        </div>
-        <div class="inline">
-            <span id="computer-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
-        </div>
-    </div>
-    <div id="play-round-modal-2">
-        <div id="selected-choices-section">
-            <div class="inline">
-                <span id="user-image"></span>
-                <p><span id="insert-player-name"></span>: </p>
-            </div>
-            <div class="inline">
-                <span id="computer-image"></span>
-                <p>Computer: </p>
             </div>
         </div>
-        <div id="alert-section">
-            <h2 id="alert-result"></h2>
+        <div id="score-area">
+            <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
+            <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
+            <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
         </div>
-    </div>
-   
+        <div id="round-1-rocks">
+            <div class="inline">
+                <span id="user-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
+            </div>
+            <div class="inline">
+                <span id="computer-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
+            </div>
+        </div>
+        <div id="play-round-modal-2">
+            <div id="selected-choices-section">
+                <div class="inline">
+                    <span id="user-image"></span>
+                    <p><span id="insert-player-name"></span>: </p>
+                </div>
+                <div class="inline">
+                    <span id="computer-image"></span>
+                    <p>Computer: </p>
+                </div>
+            </div>
+            <div id="alert-section">
+                <h2 id="alert-result"></h2>
+            </div>
+        </div>
+        <!-- Game Over Modal here -->
+        <div id="game-over-modal">
+            <h2 id="game-over-result"></h2>
+            <button id="refresh-button">Play again!</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p id="footer">&copy; Copyright 2022, Stephie Crocker
+                <a href="https://github.com/stephaniecrocker91" target="_blank" aria-label="Go to my Github Page"><i class="fab fa-github"></i></a>
+            </p>
+        </div>
 
-    <!-- Game Over Modal here -->
-    <div id="game-over-modal">
-        <h2 id="game-over-result"></h2>
-        <button id="refresh-button">Play again!</button>
-    </div>
+    </footer>
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>

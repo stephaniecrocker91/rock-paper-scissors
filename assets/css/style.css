@@ -72,7 +72,7 @@ h2 {
 }
 
 #player-name-form,
-#submit-div{
+#submit-div {
     margin-top: 5vh;
 }
 
@@ -137,16 +137,30 @@ h2 {
     margin-top: 4vh;
 }
 
+/*Footer styling*/
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color:white;
+    color:black;
+}
+#footer a {
+    color:black;
+}
+
 /* Media Queries*/
 /* Smallest phone displays*/
 @media screen and (max-width: 355px) {
     #round-number-section img {
         height: 40px;
     }
+
     .selection-button {
         width: 5rem;
         font-size: 1rem;
     }
+
     .selection-button:hover {
         font-size: 1.3rem;
     }
@@ -156,20 +170,22 @@ h2 {
         font-size: 1.1em;
     }
 }
+
 /* iPad displays*/
 @media screen and (min-width: 667px) {
     h1 {
         font-size: 70px;
     }
-    
+
     h2 {
         font-size: 50px;
-     }
-    
+    }
+
     .rockpaperscissorsimage {
         width: 130px;
         margin: 5vh 40px 0 40px;
     }
+
     #user-image img,
     #computer-image img,
     #user-round-1-rock img,
@@ -177,23 +193,25 @@ h2 {
         width: 240px;
         margin-top: 4vh;
     }
-    
+
     .selection-button {
         margin-right: 3vw;
         margin-left: 3vw;
     }
-    
+
     .selection-button,
     #button-name,
     #refresh-button {
         width: 11rem;
         font-size: 2rem;
     }
+
     .selection-button:hover,
     #button-name:hover,
     #refresh-button:hover {
         font-size: 2.5rem;
     }
+
     button-name:hover,
     #refresh-button:hover {
         width: 15rem;
@@ -204,20 +222,17 @@ h2 {
 /* large screen displays*/
 
 @media screen and (min-width: 900px) {
+
     #alert-section,
     #score-area,
     #button-area {
         width: 60vw;
-        position:relative;
-        left: 20vw; 
+        position: relative;
+        left: 20vw;
     }
-    
+
     .selection-button {
         margin: 0;
     }
 
 }
-
-
-
-
