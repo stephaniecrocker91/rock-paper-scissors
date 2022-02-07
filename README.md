@@ -222,8 +222,7 @@ FEATURES:
 
 ### Future features
 
-*   A Page containing a complimentary pre-recorded taster sessions: Yoga, Pilates, Meditation, Hiit, and some recipes.
-
+*   I would love to include some animation with the hand images such as: visual clash of computer and user hands as one beats the other.
 * * * 
 
 ## LANGUAGES:
@@ -232,6 +231,7 @@ FEATURES:
 
 *   HTML5
 *   CSS
+*   Javascript
 
 * * * 
 
@@ -241,7 +241,6 @@ FEATURES:
 * * *
 
 *   [Google Fonts](https://fonts.google.com/)
-*   [Font Awesome](https://fontawesome.com/)
 *   [GitHub](https://github.com/)
 *   [GitPod](https://www.gitpod.io/)
 *   [Coolors](https://coolors.co/)
@@ -253,3 +252,107 @@ FEATURES:
 * * * 
 
 ## TESTING, BUGS & FIXES:
+
+
+
+* * *
+
+For testing I used the following sources:
+
+* * * 
+
+### Tests
+
+* * *
+
+#### [HTML Validator](https://validator.w3.org/)
+
+
+
+
+#### [CSS Validator- Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+
+
+#### Manual testing 
+
+* * * 
+
+* Initial page load:
+* Player name form
+* All images load properly and are fully visible to the user.
+* Nav bar and footer is fixed, always displayed on the screen and fully visible.
+* The Player name Form required text input to start playing.
+* The site has responsive design, allowing the website and its features to be fully displayed (visible) on all display sized: phone, tablets, laptops, larger screens.
+
+Responsive design:
+##### Phone Display
+* I took a mobile first design approach, so the website runs very smoothly from a mobile screen. 
+* The navigation bar and footer are always displayed, large enough to click yet not distracting from its content. 
+* The initial home screen is welcoming, displaying the image upon loading on, and can be easily scrolled down to view further site information.
+* The contact form is of an appropriate size, and easily clickable to input the field text/ tick checkboxes.
+###### BUGS & FIXES: 
+* Initially the send button was too close to the social media links, but upon adding margin-bottom: 4rem to the form section, the problem was fixed.
+* Even though the first image presented nicely on MY mobile screen, when I checked the amiresponsive site the nav bar was too big and the image was chopped. I improved this by making font smaller for maxwidth=320px mobile screens (font=14px), and decreased the margin-top and margin-bottom for the h2 headers. I wanted the Image to be more visible. It improved it, but if I would like to fix this in the future.
+
+<img src="assets/images/mobile-homepage2.png" width="200px">
+<img src="assets/images/mobile-homepage1.png" width="180px">
+
+* * * 
+
+##### Tablet Display
+* The tablet displays nicely on all pages. 
+* The homepage image and most of the introductory text is displayed instantly. 
+* Nav bar is of a good size, links to all pages are easily clickable.
+* Our services section: Images are still displaying on top and text below.
+
+<img src="assets/images/tablet-screen.png" width="400px">
+
+* * * 
+
+##### Laptop Display
+* The laptop also displays nicely on all pages. 
+* Nav bar is of a an appropriate size.
+* The homepage image and most of the introductory text is displayed instantly.
+* Our services section: Images are now to the left of the text. It is more visually pleasing for this display width.
+
+<img src="assets/images/laptop-screen.png" width="600px">
+
+* * * 
+
+##### Larger Screens Display
+* The large screens also displays nicely on all pages. 
+* Nav bar is of a an appropriate size.
+* The homepage image and all of the introductory text is displayed instantly.
+* Our services section: Images are still to the left of the text.
+
+<img src="assets/images/large-screen.png" width="600px">
+
+* * * 
+
+##### My large screen DISPLAY (19020 X 1200px):
+The Homepage image is cropped, and begins from her nose down (which was not initially intentional). I actually quite like it like this, so decided to keep it. I like the way it focuses on her smile and her hands.
+
+<img src="assets/images/my-large-screen.png" width="600px">
+
+* * * 
+
+#### Lighthouse testing
+
+
+* * * 
+
+
+#### Testing User Stories
+
+* * * 
+
+1. The site is designed in a way that makes the game fun and easy to play.
+
+2. The rules of the game are clearly described and displayed at the start of the game.
+
+3. The games feels personal as the user can input their name and see it displayed throughout.
+
+4. The game round's and scores are displayed throughout. 
+
+5. The user will want to come back for more!

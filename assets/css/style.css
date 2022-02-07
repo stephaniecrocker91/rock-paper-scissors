@@ -181,13 +181,17 @@ h2 {
     .selection-button,
     #button-name,
     #refresh-button {
-        width: 10rem;
+        width: 11rem;
         font-size: 2rem;
     }
     .selection-button:hover,
     #button-name:hover,
     #refresh-button:hover {
         font-size: 2.5rem;
+    }
+    button-name:hover,
+    #refresh-button:hover {
+        width: 15rem;
     }
 
 }

@@ -62,7 +62,7 @@ function handlePlayerName(e) {
     (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
-    (document.getElementById("score-area")).style.display = "none";
+    (document.getElementById("score-area")).style.display = "block";
     
 }
 
@@ -92,7 +92,6 @@ function userChoice(e) {
     userSelectedChoice = e.target.id;
     userChoiceDisplay.innerHTML = `<img src="./assets/images/${userSelectedChoice}.jpg" alt="${userSelectedChoice}">`;
     (document.getElementById("play-round-modal-2")).style.display = "block";
-    (document.getElementById("score-area")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "none";
 }
 
