@@ -66,6 +66,11 @@ h2 {
     font-size: 2.8vh;
 }
 
+#player-name {
+    width: 30vw;
+    height: 3vh;
+}
+
 #player-name-form,
 #submit-div{
     margin-top: 5vh;
