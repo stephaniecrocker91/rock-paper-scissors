@@ -204,7 +204,17 @@ h2 {
 /* large screen displays*/
 
 @media screen and (min-width: 900px) {
+    #alert-section,
+    #score-area,
+    #button-area {
+        width: 60vw;
+        position:relative;
+        left: 20vw; 
+    }
     
+    .selection-button {
+        margin: 0;
+    }
 
 }
 
