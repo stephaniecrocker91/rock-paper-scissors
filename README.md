@@ -169,9 +169,10 @@ Before starting, I created the wireframes displayed above. I knew I wanted the g
 
 For the purpose of this game, I wanted to choose very block, bright, almost cartoon-like colors that would work well together.
 I came up with the following pallette:
-<img src="assets/images/green.png" width="300px">
-<img src="assets/images/black.png" width="300px">
-<img src="assets/images/whitesmoke.png" width="300px">
+
+<img src="assets/images/green.png" width="200px">
+<img src="assets/images/black.png" width="200px">
+<img src="assets/images/whitesmoke.png" width="200px">
 
 
 * * * 
@@ -248,11 +249,12 @@ FEATURES:
 *   [Stack Overflow](https://stackoverflow.com/)
 *   [Code beautify](https://codebeautify.org/html-to-markdown)
 *   [Compress Jpeg](https://compressjpeg.com/)
+*   [Font Awesome](https://fontawesome.com/)
+
 
 * * * 
 
 ## TESTING, BUGS & FIXES:
-
 
 
 * * *
@@ -267,11 +269,29 @@ For testing I used the following sources:
 
 #### [HTML Validator](https://validator.w3.org/)
 
+Tested and no errors found.
+The warnings noted below are for psaced that will be filled out using Javascript code.
 
+<img src="assets/images/html-validator.png" width="800px">
 
 
 #### [CSS Validator- Jigsaw](https://jigsaw.w3.org/css-validator/)
+Tested and no errors found.
 
+<img src="assets/images/css-validator.png" width="800px">
+
+#### [JAVASCRIPT Validator- JSHint](https://jshint.com/)
+Tested and a few errors were found.
+
+<img src="assets/images/js-validator.png" width="800px">
+
+Most of these were due to having not put "let" before. Once thes bugs were fixed...
+
+<img src="assets/images/js-validator-2.png" width="800px">
+
+The remaining bug is simply due to the function not being called on js page, however it is used in the HTML code.
+
+<img src="assets/images/body-launch-game-html.png" width="800px">
 
 
 #### Manual testing 
@@ -292,6 +312,12 @@ Responsive design:
 * The initial home screen is welcoming, displaying the image upon loading on, and can be easily scrolled down to view further site information.
 * The contact form is of an appropriate size, and easily clickable to input the field text/ tick checkboxes.
 ###### BUGS & FIXES: 
+
+* gameOver - test by Jo
+* final result not correct! image screenshot
+
+
+
 * Initially the send button was too close to the social media links, but upon adding margin-bottom: 4rem to the form section, the problem was fixed.
 * Even though the first image presented nicely on MY mobile screen, when I checked the amiresponsive site the nav bar was too big and the image was chopped. I improved this by making font smaller for maxwidth=320px mobile screens (font=14px), and decreased the margin-top and margin-bottom for the h2 headers. I wanted the Image to be more visible. It improved it, but if I would like to fix this in the future.
 
@@ -356,3 +382,56 @@ The Homepage image is cropped, and begins from her nose down (which was not init
 4. The game round's and scores are displayed throughout. 
 
 5. The user will want to come back for more!
+
+## DEPLOYMENT:
+
+
+### GitHub Page
+
+This site was deployed to Github pages using the following steps:
+
+1. Go to the Github repository
+2. Clock on the Settings tab
+3. Go to Github Pages Section
+4. From the source dropdown menu select Main branch
+5. Once this has been selected, provide the link to the completed website
+
+[Link to deployed site](https://stephaniecrocker91.github.io/rock-paper-scissors/)
+
+* * *
+
+
+### Forking The GitHub Repository
+
+* * *
+You can Fork the Repository. This makes a copy of the original repository on our Github account so you can make changes without affecting the original repository.
+1. Log into GitHub and locate the GitHub repository you want.
+2. Click on the "Fork" button which is located in the top right corner.
+3. You will now have a copy of the original repository in your GitHub account.
+
+* * * 
+
+### Cloning the Project.
+* * *
+1. Log into GitHub and locate the GitHub repository you want.
+2. Under the repository name, click "Code" button which will come up with a dropdown menu.
+3. Where it says Clone, copy the link below.
+
+* * * 
+
+CREDITS:
+--------
+
+* * *
+
+### Content
+* 
+
+* Images & Icons:
+    * [Font Awesome](https://fontawesome.com/) for [GitHub Icon](https://fontawesome.com/v5.15/icons/github?style=brands)
+    * [Vector Stock](https://www.vectorstock.com/royalty-free-vector/rock-paper-scissors-hand-gesture-vector-25169733) for Rock, Paper, Scissors hand images.
+       
+
+
+
+

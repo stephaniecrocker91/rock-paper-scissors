@@ -27,7 +27,7 @@ form.addEventListener("submit", handlePlayerName);
 
 //Event listener for Rock, Paper, Scissor selection buttons
 let selectionButton = document.getElementsByClassName("selection-button");
-for (i of selectionButton) {
+for (let i of selectionButton) {
     i.addEventListener("click", playRound);
 }
 
@@ -69,7 +69,7 @@ function playRound(e) {
 
 /** FUNCTION that displays Round Number */
 function updateRound() {
-    lastRound = parseInt(roundNumberDisplay.innerText);
+    let lastRound = parseInt(roundNumberDisplay.innerText);
     document.getElementById("round-number").innerText = lastRound + 1;
     if (lastRound === 5) {
         gameOver();
@@ -124,7 +124,7 @@ function compareChoice() {
  * score by 1 point, each time user wins
  */
 function updateWin() {
-    oldScoreWin = parseInt(wins.innerText);
+    let oldScoreWin = parseInt(wins.innerText);
     document.getElementById("user-win").innerText = oldScoreWin + 1;
 }
 
@@ -132,7 +132,7 @@ function updateWin() {
  * score by 1 point, each time user wins
  */
 function updateDraw() {
-    oldScoreDraw = parseInt(draw.innerText);
+    let oldScoreDraw = parseInt(draw.innerText);
     document.getElementById("draw").innerText = oldScoreDraw + 1;
 }
 
@@ -140,7 +140,7 @@ function updateDraw() {
  * score by 1 point, each time user wins
  */
 function updateLose() {
-    oldScoreLose = parseInt(lose.innerText);
+    let oldScoreLose = parseInt(lose.innerText);
     document.getElementById("user-lose").innerText = oldScoreLose + 1;
 }
 
@@ -150,7 +150,6 @@ function updateLose() {
  function gameOver() {
     let finalScoreWin = document.getElementById("user-win").innerText;
     let finalScoreLose = document.getElementById("user-lose").innerText;
-    let finalScoreDraw = document.getElementById("draw").innerText;
     if (finalScoreWin > finalScoreLose) {
         (document.getElementById("game-over-result")).innerHTML = "You win the game!";
     } else if (finalScoreWin < finalScoreLose) {
