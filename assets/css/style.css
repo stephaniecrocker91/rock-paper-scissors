@@ -148,6 +148,9 @@ h2 {
 #footer a {
     color:black;
 }
+#footer a:hover {
+    font-size: 2rem;
+}
 
 /* Media Queries*/
 /* Smallest phone displays*/

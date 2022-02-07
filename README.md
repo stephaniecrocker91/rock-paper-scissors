@@ -185,7 +185,7 @@ Shadows into Light: I wanted to use a playful font that would go nicely with the
 ### Images and Icons
 
 * * *
-<img src="assets/images/rock_paper_scissors.jpg" width="600px">
+<img src="assets/images/rock-paper-scissors.jpg" width="600px">
 
 *   Sticking to my cartoon-like inspiration for this game, I chose incredibly minimalistic icons for the Rock, paper, and scissors. These images almost feel like emojis, they are modern and fun. 
 *   I also chose to keep the palette simple with black and white. It is bold and the user is instantly drawn to them.
