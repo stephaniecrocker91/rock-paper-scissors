@@ -317,32 +317,31 @@ During this testing I did notice a big problem with the end result! This is expl
 * The initial form is of an appropriate size, and easily clickable to input the field text and click the submit button.
 * During the 5 game rounds the following features remained deisplayed in the same position: Round number, selection buttons, score tally, user-image and computer-image hands, and the round result.
 
-
-<img src="assets/images/mobile-homepage2.png" width="200px">
-<img src="assets/images/mobile-homepage1.png" width="180px">
-
+<img src="assets/images/mobile-launch-display.png" width="400px">
+<img src="assets/images/mobile-playround-display.png" width="400px">
+<img src="assets/images/mobile-gameover-display.png" width="400px">
 * * * 
 
-##### Tablet Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+##### Tablet Display 
 * The tablet displays nicely on stages of the game.
 * The buttons have spread out further across the width of the display, and the sizes have been increased.
 * The image sizes have also been slightly increased.
 * Font size has been increased also.
 
 <img src="assets/images/tablet-launch-display.png" width="400px">
-<img src="assets/images/tablet-gameround-display.png" width="400px">
+<img src="assets/images/tablet-playround-display.png" width="400px">
 <img src="assets/images/tablet-gameover-display.png" width="400px">
 
 * * * 
 
-##### Laptop & larger screens Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+##### Laptop & larger screens Display 
 * The laptop also displays nicely on all pages. 
 * The button sizes are larger again.
 * Font size has been increased also.
 * The Score area and final result areas have been placed in a more narrow div that is aligned with the button width.
 
 <img src="assets/images/large-launch-display.png" width="400px">
-<img src="assets/images/large-gameround-display.png" width="400px">
+<img src="assets/images/large-playround-display.png" width="400px">
 <img src="assets/images/large-gameover-display.png" width="400px">
 
 
@@ -351,6 +350,7 @@ During this testing I did notice a big problem with the end result! This is expl
 
 ###### BUGS & FIXES: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * The gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly.
+
 <img src="assets/images/launchgame-bug.png" width="600px">
 
 * While validating my JS for bugs, I encountered a BIG problem regarding my end result. I thought I had tested it enough, but noticed that once in a while the final result displayed would be incorrect! See below:

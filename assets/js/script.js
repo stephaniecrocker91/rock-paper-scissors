@@ -168,11 +168,7 @@ function updateLose() {
     (document.getElementById("game-over-modal")).style.display = "block";  
     gameOverResult();
  }
- function gameOverResult(){
- 
-  
-    
-}
+
    
 /** FUNCTION to REFRESH GAME back to start
  */
