@@ -293,40 +293,37 @@ The remaining bug is simply due to the function not being called on js page, how
 
 <img src="assets/images/body-launch-game-html.png" width="800px">
 
+During this testing I did notice a big problem with the end result! This is explained in the BUGS & FIXES SECTION further below. 
+
+
 
 #### Manual testing 
 
 * * * 
 
-* Initial page load:
-* Player name form
+
+* Initial page loads properly.
+* Player name form is loaded properly and the text input is required to submit the form and play the game. 
+* handlePlayerName() function works correctly, and takes the player name placing it under the players Rock,Paper,Scissors image on display during the rounds.
 * All images load properly and are fully visible to the user.
-* Nav bar and footer is fixed, always displayed on the screen and fully visible.
-* The Player name Form required text input to start playing.
+* Nav bar is always visible and footer is fixed always displayed at the bottom of the screen and fully visible.
 * The site has responsive design, allowing the website and its features to be fully displayed (visible) on all display sized: phone, tablets, laptops, larger screens.
 
-Responsive design:
+#### Responsive design:
 ##### Phone Display
 * I took a mobile first design approach, so the website runs very smoothly from a mobile screen. 
-* The navigation bar and footer are always displayed, large enough to click yet not distracting from its content. 
-* The initial home screen is welcoming, displaying the image upon loading on, and can be easily scrolled down to view further site information.
-* The contact form is of an appropriate size, and easily clickable to input the field text/ tick checkboxes.
-###### BUGS & FIXES: 
+* The header bar is fully visible and remains at the top and footer is fixed at the bottom, large enough to view and click into the Github icon yet not distracting from its content. For continuity, they remain this way during the entire game.
+* The initial home screen is welcoming, displaying the Rock, Paper, scissors image upon loading and its form.
+* The initial form is of an appropriate size, and easily clickable to input the field text and click the submit button.
+* During the 5 game rounds the following features remained deisplayed in the same position: Round number, selection buttons, score tally, user-image and computer-image hands, and the round result.
 
-* gameOver - test by Jo
-* final result not correct! image screenshot
-
-
-
-* Initially the send button was too close to the social media links, but upon adding margin-bottom: 4rem to the form section, the problem was fixed.
-* Even though the first image presented nicely on MY mobile screen, when I checked the amiresponsive site the nav bar was too big and the image was chopped. I improved this by making font smaller for maxwidth=320px mobile screens (font=14px), and decreased the margin-top and margin-bottom for the h2 headers. I wanted the Image to be more visible. It improved it, but if I would like to fix this in the future.
 
 <img src="assets/images/mobile-homepage2.png" width="200px">
 <img src="assets/images/mobile-homepage1.png" width="180px">
 
 * * * 
 
-##### Tablet Display
+##### Tablet Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * The tablet displays nicely on all pages. 
 * The homepage image and most of the introductory text is displayed instantly. 
 * Nav bar is of a good size, links to all pages are easily clickable.
@@ -336,7 +333,7 @@ Responsive design:
 
 * * * 
 
-##### Laptop Display
+##### Laptop Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * The laptop also displays nicely on all pages. 
 * Nav bar is of a an appropriate size.
 * The homepage image and most of the introductory text is displayed instantly.
@@ -346,7 +343,7 @@ Responsive design:
 
 * * * 
 
-##### Larger Screens Display
+##### Larger Screens Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * The large screens also displays nicely on all pages. 
 * Nav bar is of a an appropriate size.
 * The homepage image and all of the introductory text is displayed instantly.
@@ -356,24 +353,39 @@ Responsive design:
 
 * * * 
 
-##### My large screen DISPLAY (19020 X 1200px):
+##### My large screen DISPLAY (19020 X 1200px): !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 The Homepage image is cropped, and begins from her nose down (which was not initially intentional). I actually quite like it like this, so decided to keep it. I like the way it focuses on her smile and her hands.
 
 <img src="assets/images/my-large-screen.png" width="600px">
 
 * * * 
 
-#### Lighthouse testing
+
+###### BUGS & FIXES: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* The gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly.
+<img src="assets/images/launchgame-bug.png" width="600px">
+
+* While validating my JS for bugs, I encountered a BIG problem regarding my end result. I thought I had tested it enough, but noticed that once in a while the final result displayed would be incorrect! See below:
+
+<img src="assets/images/result-error-bug.png" width="600px">
+
+
+
+
+
+#### Lighthouse testing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 * * * 
 
 
-#### Testing User Stories
+#### Testing User Stories !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 * * * 
 
 1. The site is designed in a way that makes the game fun and easy to play.
+
+YES!
 
 2. The rules of the game are clearly described and displayed at the start of the game.
 
@@ -419,7 +431,7 @@ You can Fork the Repository. This makes a copy of the original repository on our
 
 * * * 
 
-CREDITS:
+CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 --------
 
 * * *
