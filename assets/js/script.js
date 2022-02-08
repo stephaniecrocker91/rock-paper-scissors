@@ -61,10 +61,10 @@ function handlePlayerName(e) {
 
 /** FUNCTION that runs each round */
 function playRound(e) {
-    updateRound();
     userChoice(e);
     computerChoice();
     compareChoice();
+    updateRound();
 }
 
 /** FUNCTION that displays Round Number */
@@ -148,13 +148,15 @@ function updateLose() {
  * display GAME OVER MODAL after 5 rounds and show final result of game
  */
  function gameOver() {
-    let finalScoreWin = document.getElementById("user-win").innerText;
-    let finalScoreLose = document.getElementById("user-lose").innerText;
+    let finalScoreWin = parseInt(document.getElementById("user-win").innerText);
+    let finalScoreLose = parseInt(document.getElementById("user-lose").innerText);
+    console.log(finalScoreLose);
+    console.log(finalScoreWin);
     if (finalScoreWin > finalScoreLose) {
         (document.getElementById("game-over-result")).innerHTML = "You win the game!";
     } else if (finalScoreWin < finalScoreLose) {
         (document.getElementById("game-over-result")).innerHTML = "Game over, you lose!";
-    } else if (finalScoreLose === finalScoreWin) {
+    } else if (finalScoreLose == finalScoreWin) {
         (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
     (document.getElementById("play-round-modal-1")).style.display = "none";
@@ -163,7 +165,13 @@ function updateLose() {
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block"; 
-    (document.getElementById("game-over-modal")).style.display = "block";   
+    (document.getElementById("game-over-modal")).style.display = "block";  
+    gameOverResult();
+ }
+ function gameOverResult(){
+ 
+  
+    
 }
    
 /** FUNCTION to REFRESH GAME back to start

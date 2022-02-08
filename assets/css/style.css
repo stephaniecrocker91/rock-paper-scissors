@@ -222,6 +222,17 @@ h2 {
 /* ------------------Large screen displays------------------ */
 @media screen and (min-width: 900px) {
 
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+    p {
+        font-size: 30px;
+    }
+
     #alert-section,
     #score-area,
     #button-area {

@@ -324,39 +324,27 @@ During this testing I did notice a big problem with the end result! This is expl
 * * * 
 
 ##### Tablet Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-* The tablet displays nicely on all pages. 
-* The homepage image and most of the introductory text is displayed instantly. 
-* Nav bar is of a good size, links to all pages are easily clickable.
-* Our services section: Images are still displaying on top and text below.
+* The tablet displays nicely on stages of the game.
+* The buttons have spread out further across the width of the display, and the sizes have been increased.
+* The image sizes have also been slightly increased.
+* Font size has been increased also.
 
-<img src="assets/images/tablet-screen.png" width="400px">
+<img src="assets/images/tablet-launch-display.png" width="400px">
+<img src="assets/images/tablet-gameround-display.png" width="400px">
+<img src="assets/images/tablet-gameover-display.png" width="400px">
 
 * * * 
 
-##### Laptop Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+##### Laptop & larger screens Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * The laptop also displays nicely on all pages. 
-* Nav bar is of a an appropriate size.
-* The homepage image and most of the introductory text is displayed instantly.
-* Our services section: Images are now to the left of the text. It is more visually pleasing for this display width.
+* The button sizes are larger again.
+* Font size has been increased also.
+* The Score area and final result areas have been placed in a more narrow div that is aligned with the button width.
 
-<img src="assets/images/laptop-screen.png" width="600px">
+<img src="assets/images/large-launch-display.png" width="400px">
+<img src="assets/images/large-gameround-display.png" width="400px">
+<img src="assets/images/large-gameover-display.png" width="400px">
 
-* * * 
-
-##### Larger Screens Display !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-* The large screens also displays nicely on all pages. 
-* Nav bar is of a an appropriate size.
-* The homepage image and all of the introductory text is displayed instantly.
-* Our services section: Images are still to the left of the text.
-
-<img src="assets/images/large-screen.png" width="600px">
-
-* * * 
-
-##### My large screen DISPLAY (19020 X 1200px): !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-The Homepage image is cropped, and begins from her nose down (which was not initially intentional). I actually quite like it like this, so decided to keep it. I like the way it focuses on her smile and her hands.
-
-<img src="assets/images/my-large-screen.png" width="600px">
 
 * * * 
 
