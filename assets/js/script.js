@@ -52,6 +52,8 @@ function handlePlayerName(e) {
     e.preventDefault();
     let playerName = (document.getElementById("player-name")).value;
     (document.getElementById("insert-player-name")).innerText = playerName;
+    /*new!!!!!!!!!!!*/
+    (document.getElementById("header")).style.display = "none";
     (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
@@ -159,6 +161,7 @@ function updateLose() {
     } else if (finalScoreLose == finalScoreWin) {
         (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
+    (document.getElementById("header")).style.display = "block";
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";
