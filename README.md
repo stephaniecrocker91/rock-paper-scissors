@@ -383,11 +383,20 @@ What was happening was that the result for Round 4 was being read to come up wit
 
 
 
-#### Lighthouse testing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#### Lighthouse testing 
 
 
 * * * 
 
+When putting the site through lighthouse testing I received the following report.
+
+##### Mobile Lighthouse testing 
+
+<img src="assets/images/mobile-lighthouse.png" width="300px">
+
+##### Desktop Lighthouse testing 
+
+<img src="assets/images/desktop-lighthouse.png" width="300px">
 
 #### Testing User Stories 
 
