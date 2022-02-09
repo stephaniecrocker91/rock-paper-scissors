@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Interactive game of Rock, Paper Scissors where the user can play against the computer.">
-    <meta name="keywords"
-        content="rock paper scissors, rock, paper, scissors, game, online game">
+    <meta name="keywords" content="rock paper scissors, rock, paper, scissors, game, online game">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
@@ -25,7 +24,7 @@
     </header>
     <!-- Launch Game Modal here-->
     <main>
-        <div id="launch-game-modal">
+        <section id="launch-game-modal">
             <div id="form-div">
                 <img src="./assets/images/rocklogo.jpg" alt="" class="rockpaperscissorsimage">
                 <img src="./assets/images/paperlogo.jpg" alt="" class="rockpaperscissorsimage">
@@ -36,54 +35,54 @@
                     <div id="submit-div"><input type="submit" value="Let's rock!" id="button-name"></div>
                 </form>
             </div>
-        </div>
-    </main>
-    <!-- Play Round Modal here -->
-    <main>
-        <div id="play-round-modal-1">
-            <div id="round-number-section">
-                <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
-                <img src="./assets/images/underline.png" alt="pen marker underline">
-            </div>
-            <div id="button-area">
-                <button class="selection-button" id="rock">rock</button>
-                <button class="selection-button" id="paper">paper</button>
-                <button class="selection-button" id="scissors">scissors</button>
-            </div>
-        </div>
-        <div id="score-area">
-            <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
-            <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
-            <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
-        </div>
-        <div id="round-1-rocks">
-            <div class="inline">
-                <span id="user-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
-            </div>
-            <div class="inline">
-                <span id="computer-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
-            </div>
-        </div>
-        <div id="play-round-modal-2">
-            <div id="selected-choices-section">
-                <div class="inline">
-                    <span id="user-image"></span>
-                    <p><span id="insert-player-name"></span>: </p>
+        </section>
+        <!-- Play Round Modal here -->
+        <section>
+            <div id="play-round-modal-1">
+                <div id="round-number-section">
+                    <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
+                    <img src="./assets/images/underline.png" alt="pen marker underline">
                 </div>
-                <div class="inline">
-                    <span id="computer-image"></span>
-                    <p>Computer: </p>
+                <div id="button-area">
+                    <button class="selection-button" id="rock">rock</button>
+                    <button class="selection-button" id="paper">paper</button>
+                    <button class="selection-button" id="scissors">scissors</button>
                 </div>
             </div>
-            <div id="alert-section">
-                <h2 id="alert-result"></h2>
+            <div id="score-area">
+                <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
+                <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
+                <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
             </div>
-        </div>
-        <!-- Game Over Modal here -->
-        <div id="game-over-modal">
-            <h2 id="game-over-result"></h2>
-            <button id="refresh-button">Play again!</button>
-        </div>
+            <div id="round-1-rocks">
+                <div class="inline">
+                    <span id="user-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
+                </div>
+                <div class="inline">
+                    <span id="computer-round-1-rock"><img src="./assets/images/rock.jpg" alt="Rock image"></span>
+                </div>
+            </div>
+            <div id="play-round-modal-2">
+                <div id="selected-choices-section">
+                    <div class="inline">
+                        <span id="user-image"></span>
+                        <p><span id="insert-player-name"></span>: </p>
+                    </div>
+                    <div class="inline">
+                        <span id="computer-image"></span>
+                        <p>Computer: </p>
+                    </div>
+                </div>
+                <div id="alert-section">
+                    <h2 id="alert-result"></h2>
+                </div>
+            </div>
+            <!-- Game Over Modal here -->
+            <div id="game-over-modal">
+                <h2 id="game-over-result"></h2>
+                <button id="refresh-button">Play again!</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div>

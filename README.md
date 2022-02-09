@@ -289,7 +289,10 @@ For testing I used the following sources:
 #### [HTML Validator](https://validator.w3.org/)
 
 Tested and no errors found.
-The warnings noted below are for placed that will be filled out using Javascript code.
+Warnings:
+* The empty headers are for spaced that will be filled out using Javascript code
+* The section area warning suggesting a h2-h6 element: I don't think the form needs a header as it is pretty self explanatory.
+
 
 <img src="assets/images/html-validator.png" width="800px">
 
@@ -476,6 +479,7 @@ CREDITS:
 * A couple of the code institute tutors helped me with some issues I was having. 
     * My gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly. [Page Onload](https://www.w3schools.com/jsref/event_onload.asp).
     * When I encountered the end result bug, I had help from Oisin at Code Institute. He suggested I try to solve it by changing the order of my functions  within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
+
 <img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
 
 
