@@ -14,7 +14,7 @@ ABOUT THE WEBSITE:
 
 _Rock, Paper, Scissors_ is an online game of the classic Rock, Paper, Scissors. The computer will generate it's random choices and your job is to simply beat that big mean machine in a series of 5 rounds! Let's rock!
 
-<img src="" width="700px">
+<img src="assets/images/i-am-responsive.png" width="500px">
 
 * * * 
 
@@ -457,7 +457,7 @@ You can Fork the Repository. This makes a copy of the original repository on our
 
 * * * 
 
-CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+CREDITS: 
 --------
 
 
