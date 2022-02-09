@@ -37,8 +37,8 @@ USER STORIES:
 
 1. The site is designed in a way that makes the game fun and easy to play.
 2. The games feels personal as the user can input their name and see it displayed throughout.
-3. The game round's and scores are displayed throughout. 
-4. The user will want to come back for more!
+3. The game rounds and scores are displayed throughout. 
+4. The user will want to play again and again!
 
 
 * * * 
@@ -49,11 +49,11 @@ STRAGETY:
 
 * * *
 
-Create a fun and easy to navigate intercative game of Rock, paper Scissors that allows the player to play against the computer who will generate it's random choices. 
-The game will go for 5 rounds, displaying the tally throghout. After Round 5 the game will dislay the Game Winner, and allow for the option to play Again.
+Create a fun and easy to navigate interactive game of Rock, Paper & Scissors that allows the player to play against the computer who will generate it's choice at random. 
+The game will last 5 rounds, displaying the tally throghout. After Round 5 the game will dislay the Game Winner, and allow for the option to _Play Again_.
 
 
-The site aesthetic is minimalistic: displaying big buttons, images displaying player and computer choice, with bright and contrasting colors .
+The site aesthetic is minimalistic: displays big buttons and bold images of the player and computer choice. It is styled with bright and contrasting colors.
 Consistent styling for easy navigation using a mobile-first approach and then ensuring it displays flawlessly across all devices. Create a code that is clear and allows to update with ease.
 
 * * * 
@@ -88,11 +88,11 @@ The initial homepage consists of:
 * A small form where the Player will be required to submit their name. The form will not submit without this information. The submit button is styled in the same colors as the header and it reads "Let's rock!".
 
 
-<img src="assets/images/homepage.png" width="500px">
+<img src="assets/images/mobile-launch-display.png" width="500px">
 
 * * * 
   
-### Playing first round- _play-round-1 modal_
+### Playing first round- _play round 1 display_
 
 * * *
 
@@ -102,11 +102,11 @@ When clicking "let's rock!" in the initial form, you are taken to the initial pl
 * Rock, Paper and Scissors interactive buttons. These are styled in the same bright bold colors, fun font, and are displayed clearly in the center of the page.
 
 
-<img src="assets/images/ourservices-1.png" width="500px">
+<img src="assets/images/mobile-round1-display.png" width="500px">
 
  
 
-### After initial Rock, paper, scissors selection - _play-round-2 modal_
+### After initial Rock, paper, scissors selection - _play round 2 to round 5 display_
 
 * * *
 
@@ -121,11 +121,11 @@ After the user selecting their first choice of Rock, Paper or Scissors, they are
 *   A div containing the previous rounds result: An short alert message displaying previous round result: You win!, You lose!, or You draw!
 
 
-<img src="assets/images/contact-us-page.png" width="500px">
+<img src="assets/images/mobile-playround-display.png" width="500px">
   
 * * * 
 
-### Game Over Modal: displayed after Round 5 - _game-over-modal_
+### Game Over Modal: displayed after Round 5 - _game over display_
 
 * * *
 
@@ -134,6 +134,8 @@ After the user has selected their final choice in Round 5, they are redirected t
 * A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
 * Final Alert message dsplaying the game result: You win! You lose! You draw! 
 * A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clickng this button will trigger a function reseting the game back to _launch-game-modal_
+
+<img src="assets/images/mobile-gameover-display.png" width="500px">
 
 
 
@@ -181,6 +183,9 @@ I came up with the following pallette:
 * * *
 
 Shadows into Light: I wanted to use a playful font that would go nicely with the game. It is fun, relaxed, cartoon-like, and it has some personality! My fall-back font is Sans, which I think also goes nicely with the site's feel and purpose.
+I initialy wanted to combine it with anothe font, but once I started styling I preferred keeping it the one.
+
+<img src="assets/images/shadowsintolight-font.jpg" width="600px">
 
 ### Images and Icons
 
@@ -236,6 +241,7 @@ FEATURES:
 
 * I would love to include some animation with the hand images such as: visual clash of computer and user hands as one beats the other.
 * I would like to change the layout so that the selection buttons, start game button and play again button are all in the exact same place on the page display. I think this would allow for an easier flow of the game.
+
 * * * 
 
 ## LANGUAGES:
@@ -391,17 +397,30 @@ What was happening was that the result for Round 4 was being read to come up wit
 
 YES! The styling of the site is simplistic and fun. The buttons and big and bright, and are styled when being hovered over. The page displays images of rock, paper and scissors when called upon. The images are big and bold. The rounds are clearly labeled and the results clearly displayed. It is easy for the user to Refresh the game and play again and again!
 
+<img src="assets/images/button-style.png" width="600px">
+<img src="assets/images/results-display.png" width="600px">
+<img src="assets/images/refresh-1.png" width="600px">
+<img src="assets/images/refresh-2.png" width="600px">
+
+
 2. The games feels personal as the user can input their name and see it displayed throughout.
 
 YES! The player is able to input their name into an initial form. This is required to play the game. That name is then displayed at the bottom of the user's selection. the use of this tool makes the game personal!
+<img src="assets/images/name-form.png" width="600px">
+<img src="assets/images/name-display.png" width="600px">
+
+
 
 3. The game round's and scores are displayed throughout. 
 
 YES! Both are displayed clearly throughout the rounds.
 
+<img src="assets/images/results-display.png" width="600px">
+
 4. The user will want to come back for more!
 
 This game is fun, easy to play and can be easily replayed after 5 rounds. It's styling is simplistic and fun which will leave th player wanting to come back!
+<img src="assets/images/play-again-button.png" width="600px">
 
 ## DEPLOYMENT:
 
