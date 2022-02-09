@@ -357,6 +357,9 @@ During this testing I did notice a big problem with the end result! This is expl
 
 <img src="assets/images/result-error-bug.png" width="600px">
 
+What was happening was that the result for Round 4 was being read to come up with the final answer. Upon getting assistance from the Code Institute mentors, we discovered that there the easiest option would be to swicth the order of the functions run within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
+
+<img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
 
 
 
@@ -421,6 +424,7 @@ You can Fork the Repository. This makes a copy of the original repository on our
 
 CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 --------
+
 
 * * *
 
