@@ -36,10 +36,9 @@ USER STORIES:
 * * *
 
 1. The site is designed in a way that makes the game fun and easy to play.
-2. The rules of the game are clearly described and displayed at the start of the game.
-3. The games feels personal as the user can input their name and see it displayed throughout.
-4. The game round's and scores are displayed throughout. 
-5. The user will want to come back for more!
+2. The games feels personal as the user can input their name and see it displayed throughout.
+3. The game round's and scores are displayed throughout. 
+4. The user will want to come back for more!
 
 
 * * * 
@@ -205,25 +204,38 @@ FEATURES:
     * Image of rock, paper and scissors
     * Player name input form (required)
     * Submit button labelled "Let's Rock!"
+
+  <img src="assets/images/mobile-launch-display.png" width="500px"> 
+
 *   Play Round Modal: which loads once the user has submited the form. The form takes the player name and uses it below.
     * Same header
     * Round number
     * 3 clickable buttons labelled: Rock, Paper and Scissors.
+    * A tally of the score to show the user what will be counted for: _Win:0, Draw:0, Lose:0_
     * 2 ROCK images facing each other
+
+ <img src="assets/images/mobile-round1-display.png" width="500px"> 
+
 *   As from Round 2... the same as above, plus...
     * The round number will update itself each round!
     * A tally of the current score (which will update round after round): For example _Win: 0 Draw: 1 Lose: 2_
     * A black box with the outcome of the previous play: For example: _You Draw!_
+
+ <img src="assets/images/mobile-playround-display.png" width="500px"> 
+
 * After the final Round 5...
     * The final score tally
     * The final game result. For example: _Congratulations, you win!_
     * A Refresh button, to play again! (This takes the user back to the start)
 
+<img src="assets/images/mobile-gameover-display.png" width="500px"> 
+
 * * * 
 
 ### Future features
 
-*   I would love to include some animation with the hand images such as: visual clash of computer and user hands as one beats the other.
+* I would love to include some animation with the hand images such as: visual clash of computer and user hands as one beats the other.
+* I would like to change the layout so that the selection buttons, start game button and play again button are all in the exact same place on the page display. I think this would allow for an easier flow of the game.
 * * * 
 
 ## LANGUAGES:
@@ -250,6 +262,7 @@ FEATURES:
 *   [Code beautify](https://codebeautify.org/html-to-markdown)
 *   [Compress Jpeg](https://compressjpeg.com/)
 *   [Font Awesome](https://fontawesome.com/)
+*   [Favicon](https://favicon.io/)
 
 
 * * * 
@@ -348,7 +361,7 @@ During this testing I did notice a big problem with the end result! This is expl
 * * * 
 
 
-###### BUGS & FIXES: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+###### BUGS & FIXES: 
 * The gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly.
 
 <img src="assets/images/launchgame-bug.png" width="600px">
@@ -376,15 +389,19 @@ What was happening was that the result for Round 4 was being read to come up wit
 
 1. The site is designed in a way that makes the game fun and easy to play.
 
-YES!
+YES! The styling of the site is simplistic and fun. The buttons and big and bright, and are styled when being hovered over. The page displays images of rock, paper and scissors when called upon. The images are big and bold. The rounds are clearly labeled and the results clearly displayed. It is easy for the user to Refresh the game and play again and again!
 
-2. The rules of the game are clearly described and displayed at the start of the game.
+2. The games feels personal as the user can input their name and see it displayed throughout.
 
-3. The games feels personal as the user can input their name and see it displayed throughout.
+YES! The player is able to input their name into an initial form. This is required to play the game. That name is then displayed at the bottom of the user's selection. the use of this tool makes the game personal!
 
-4. The game round's and scores are displayed throughout. 
+3. The game round's and scores are displayed throughout. 
 
-5. The user will want to come back for more!
+YES! Both are displayed clearly throughout the rounds.
+
+4. The user will want to come back for more!
+
+This game is fun, easy to play and can be easily replayed after 5 rounds. It's styling is simplistic and fun which will leave th player wanting to come back!
 
 ## DEPLOYMENT:
 
@@ -434,6 +451,7 @@ CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 * Images & Icons:
     * [Font Awesome](https://fontawesome.com/) for [GitHub Icon](https://fontawesome.com/v5.15/icons/github?style=brands)
     * [Vector Stock](https://www.vectorstock.com/royalty-free-vector/rock-paper-scissors-hand-gesture-vector-25169733) for Rock, Paper, Scissors hand images.
+    * [Favicon](https://favicon.io/emoji-favicons/oncoming-fist)
        
 
 
