@@ -150,8 +150,15 @@ h2 {
 }
 
 /* ------------------ MEDIA QUERIES HERE ------------------*/
-/* Smallest phone displays*/
-@media screen and (max-width: 355px) {
+
+/* Phone displays*/
+@media screen and (max-width: 500px) {
+   
+    h1 {
+        font-size: 5vh;
+    }
+   
+   
     #round-number-section img {
         height: 40px;
     }
@@ -171,7 +178,7 @@ h2 {
     }
 }
 
-/* ------------------Tablet displays------------------*/
+/* Tablet displays*/
 @media screen and (min-width: 667px) {
     h1 {
         font-size: 70px;
@@ -219,7 +226,7 @@ h2 {
 
 }
 
-/* ------------------Large screen displays------------------ */
+/* Large screen displays */
 @media screen and (min-width: 900px) {
 
     h1 {
