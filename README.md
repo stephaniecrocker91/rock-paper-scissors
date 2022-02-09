@@ -72,7 +72,7 @@ STRUCTURE:
 *   The header displaying th game title is clearly displayed at the top of the HTML page.
 *   It is styled in CSS with fun font-family and in bright and contrasting colors which set the mood to the game.
 
-<img src="assets/images/navbar.png" width="500px">
+<img src="assets/images/header.png" width="500px">
 
 
 * * * 
@@ -185,7 +185,7 @@ I came up with the following pallette:
 Shadows into Light: I wanted to use a playful font that would go nicely with the game. It is fun, relaxed, cartoon-like, and it has some personality! My fall-back font is Sans, which I think also goes nicely with the site's feel and purpose.
 I initialy wanted to combine it with anothe font, but once I started styling I preferred keeping it the one.
 
-<img src="assets/images/shadowsintolight-font.jpg" width="600px">
+<img src="assets/images/shadowsintolight-font.png" width="600px">
 
 ### Images and Icons
 
@@ -389,7 +389,7 @@ What was happening was that the result for Round 4 was being read to come up wit
 * * * 
 
 
-#### Testing User Stories !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#### Testing User Stories 
 
 * * * 
 
@@ -397,30 +397,29 @@ What was happening was that the result for Round 4 was being read to come up wit
 
 YES! The styling of the site is simplistic and fun. The buttons and big and bright, and are styled when being hovered over. The page displays images of rock, paper and scissors when called upon. The images are big and bold. The rounds are clearly labeled and the results clearly displayed. It is easy for the user to Refresh the game and play again and again!
 
-<img src="assets/images/button-style.png" width="600px">
-<img src="assets/images/results-display.png" width="600px">
-<img src="assets/images/refresh-1.png" width="600px">
-<img src="assets/images/refresh-2.png" width="600px">
+<img src="assets/images/results-display.png" width="300px"> 
+
+<img src="assets/images/refresh-1.png" width="300px"> <img src="assets/images/refresh-2.png" width="300px">
 
 
 2. The games feels personal as the user can input their name and see it displayed throughout.
 
 YES! The player is able to input their name into an initial form. This is required to play the game. That name is then displayed at the bottom of the user's selection. the use of this tool makes the game personal!
-<img src="assets/images/name-form.png" width="600px">
-<img src="assets/images/name-display.png" width="600px">
 
+<img src="assets/images/name-form.png" width="300px"> <img src="assets/images/name-display.png" width="300px">
 
 
 3. The game round's and scores are displayed throughout. 
 
 YES! Both are displayed clearly throughout the rounds.
 
-<img src="assets/images/results-display.png" width="600px">
+<img src="assets/images/results-display.png" width="400px">
 
 4. The user will want to come back for more!
 
 This game is fun, easy to play and can be easily replayed after 5 rounds. It's styling is simplistic and fun which will leave th player wanting to come back!
-<img src="assets/images/play-again-button.png" width="600px">
+
+<img src="assets/images/play-again-button.png" width="200px">
 
 ## DEPLOYMENT:
 
@@ -466,9 +465,9 @@ CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Content & Code
 * A couple of the code institute tutors helped me with some issues I was having. 
-    * Jo
-    * Oisin
-* Inspiration from random number tutorial
+    * My gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly. [Page Onload](https://www.w3schools.com/jsref/event_onload.asp).
+    * When I encountered the end result bug, I had help from Oisin at Code Institute. He suggested I try to solve it by changing the order of my functions  within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
+<img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
 
 
 * Images & Icons:
