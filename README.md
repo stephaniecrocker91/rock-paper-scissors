@@ -464,8 +464,12 @@ CREDITS: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 * * *
 
-### Content
-* 
+### Content & Code
+* A couple of the code institute tutors helped me with some issues I was having. 
+    * Jo
+    * Oisin
+* Inspiration from random number tutorial
+
 
 * Images & Icons:
     * [Font Awesome](https://fontawesome.com/) for [GitHub Icon](https://fontawesome.com/v5.15/icons/github?style=brands)
