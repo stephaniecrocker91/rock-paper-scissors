@@ -167,7 +167,6 @@ function updateLose() {
     (document.getElementById("score-area")).style.display = "block"; 
     (document.getElementById("game-over-modal")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "block";  
-    gameOverResult();
  }
 
    

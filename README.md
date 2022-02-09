@@ -14,7 +14,7 @@ ABOUT THE WEBSITE:
 
 _Rock, Paper, Scissors_ is an online game of the classic Rock, Paper, Scissors. The computer will generate its random choices and your job is to simply beat that big mean machine in a series of 5 rounds! Let's rock!
 
-<img src="assets/images/i-am-responsive.png" width="500px">
+<img src="assets/images/am-i-responsive.png" width="500px">
 
 * * * 
 
@@ -88,7 +88,7 @@ The initial homepage consists of:
 * A small form where the Player will be required to submit their name. The form will not submit without this information. The submit button is styled in the same colors as the header and it reads "Let's rock!".
 
 
-<img src="assets/images/mobile-launch-display.png" width="500px">
+<img src="assets/images/mobile-launch-display.png" width="200px">
 
 * * * 
   
@@ -102,7 +102,7 @@ When clicking "let's rock!" in the initial form, you are taken to the initial pl
 * Rock, Paper and Scissors interactive buttons. These are styled in the same bright bold colors, fun font, and are displayed clearly in the centre of the page.
 
 
-<img src="assets/images/mobile-round1-display.png" width="500px">
+<img src="assets/images/mobile-round1-display.png" width="200px">
 
  
 
@@ -121,7 +121,7 @@ After the user selecting their first choice of Rock, Paper or Scissors, they are
 *   A div containing the previous rounds result: An short alert message displaying previous round result: You win!, You lose!, or You draw!
 
 
-<img src="assets/images/mobile-playround-display.png" width="500px">
+<img src="assets/images/mobile-playround-display.png" width="200px">
   
 * * * 
 
@@ -132,10 +132,11 @@ After the user selecting their first choice of Rock, Paper or Scissors, they are
 After the user has selected their final choice in Round 5, they are redirected to the Game Over Modal. This displays:
 
 * A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
+* The initial two rock symbols facing each other (as on round 1).
 * Final Alert message displaying the game result: You win! You lose! You draw! 
 * A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clicking this button will trigger a function resetting the game back to _launch-game-modal_
 
-<img src="assets/images/mobile-gameover-display.png" width="500px">
+<img src="assets/images/mobile-gameover-display.png" width="200px">
 
 
 
@@ -153,6 +154,7 @@ After the user has selected their final choice in Round 5, they are redirected t
 
 <img src="./assets/images/wireframe-large-display.png" width="1000px">
 
+As seen above, I initially wanted the header Rock paper Scissors displayed throughout the entire game. I decided to rmeove it from the game rounds, as I wanted to make sure that the user would NEVER have to scroll down for their result. Removing the header allowed me to maintain the font and buttons large enough and user friendly.
 
 
 * * * 
@@ -210,30 +212,30 @@ FEATURES:
     * Player name input form (required)
     * Submit button labelled "Let's Rock!"
 
-  <img src="assets/images/mobile-launch-display.png" width="500px"> 
+  <img src="assets/images/tablet-launch-display.png" width="500px"> 
 
 *   Play Round Modal: which loads once the user has submitted the form. The form takes the players name and uses it below.
-    * Same header
     * Round number
     * 3 clickable buttons labelled: Rock, Paper and Scissors.
     * A tally of the score to show the user what will be counted for: _Win:0, Draw:0, Lose:0_
     * 2 ROCK images facing each other
 
- <img src="assets/images/mobile-round1-display.png" width="500px"> 
+ <img src="assets/images/tablet-round1-display.png" width="500px"> 
 
-*   As from Round 2... the same as above, plus...
+*   As from Round 2... same as above, plus...
     * The round number will update itself each round!
     * A tally of the current score (which will update round after round): For example: _Win: 0 Draw: 1 Lose: 2_
     * A black box with the outcome of the previous play: For example: _You Draw!_
 
- <img src="assets/images/mobile-playround-display.png" width="500px"> 
+ <img src="assets/images/tablet-playround-display.png" width="500px"> 
 
 * After the final Round 5...
     * The final score tally.
+    * The initial two rock symbols facing each other (as on round 1).
     * The final game result. For example: _Congratulations, you win!_
     * A Refresh button, to play again! (This takes the user back to the start)
 
-<img src="assets/images/mobile-gameover-display.png" width="500px"> 
+<img src="assets/images/tablet-gameover-display.png" width="500px"> 
 
 * * * 
 
@@ -241,6 +243,7 @@ FEATURES:
 
 * I would love to include some animation with the hand images such as: visual clash of computer and user hands as one beats the other.
 * I would like to change the layout so that the selection buttons, start game button and play again button are all in the exact same place on the page display. I think this would allow for an easier flow of the game.
+* Ideally I would like to always have the Header displaying game title on top. This was my initial plan, but considering my deadline and having prioritised the javascript side of this project, I decided it was more important for me to remove any need for the user to scroll down. Removing the header in these Round sections was the easiest way to achieve this.
 
 * * * 
 
@@ -339,9 +342,9 @@ During this testing I did notice a big problem with the end result! This is expl
 * The initial form is of an appropriate size, and easily clickable to input the field text and click the submit button.
 * During the 5 game rounds the following features remained displayed in the same position: Round number, selection buttons, score tally, user-image and computer-image hands, and the round result.
 
-<img src="assets/images/mobile-launch-display.png" width="400px">
-<img src="assets/images/mobile-playround-display.png" width="400px">
-<img src="assets/images/mobile-gameover-display.png" width="400px">
+<img src="assets/images/mobile-launch-display.png" width="200px">
+<img src="assets/images/mobile-playround-display.png" width="200px">
+<img src="assets/images/mobile-gameover-display.png" width="200px">
 * * * 
 
 ##### Tablet Display 
@@ -382,6 +385,9 @@ During this testing I did notice a big problem with the end result! This is expl
 What was happening was that the result for Round 4 was being read to come up with the final answer. Upon getting assistance from the Code Institute mentors, we discovered that there the easiest option would be to switch the order of the functions run within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
 
 <img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
+
+* I noticed that during the Game rounds, the user was having to scroll down to see their result. For this reason, I decided to remove the header (Rock paper Scissors title) from the display (between rounds 1 and 5). I initially tried to change the font and button sizes, but I thought it all looked a bit too crowded. Due to deadlines, removing the header seemed to be the best way to solve this problem (for now.. I will be working on this in the future)!
+
 
 
 
@@ -479,7 +485,7 @@ CREDITS:
 * A couple of the code institute tutors helped me with some issues I was having. 
     * My gameOver function was getting quite heavy and becoming problematic particularly in displaying block and none. A tutor at code institute recommended I  use the an onload instead. This made things run much smoothly. [Page Onload](https://www.w3schools.com/jsref/event_onload.asp).
     * When I encountered the end result bug, I had help from Oisin at Code Institute. He suggested I try to solve it by changing the order of my functions  within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
-    
+
 
 <img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
 
