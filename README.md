@@ -12,7 +12,7 @@ ABOUT THE WEBSITE:
 
 
 
-_Rock, Paper, Scissors_ is an online game of the classic Rock, Paper, Scissors. The computer will generate it's random choices and your job is to simply beat that big mean machine in a series of 5 rounds! Let's rock!
+_Rock, Paper, Scissors_ is an online game of the classic Rock, Paper, Scissors. The computer will generate its random choices and your job is to simply beat that big mean machine in a series of 5 rounds! Let's rock!
 
 <img src="assets/images/i-am-responsive.png" width="500px">
 
@@ -23,7 +23,7 @@ _Rock, Paper, Scissors_ is an online game of the classic Rock, Paper, Scissors. 
 
 * * *
 
-This online interactive game targets all ages 5+, and that is it's beauty! Almost anyone can appreciate a good game of rock, paper, scissors.
+This online interactive game targets all ages 5+, and that is its beauty! Almost anyone can appreciate a good game of rock, paper, scissors.
 
 *   Children 5+
 *   Adults
@@ -36,7 +36,7 @@ USER STORIES:
 * * *
 
 1. The site is designed in a way that makes the game fun and easy to play.
-2. The games feels personal as the user can input their name and see it displayed throughout.
+2. The game feels personal as the user can input their name and see it displayed throughout.
 3. The game rounds and scores are displayed throughout. 
 4. The user will want to play again and again!
 
@@ -49,8 +49,8 @@ STRAGETY:
 
 * * *
 
-Create a fun and easy to navigate interactive game of Rock, Paper & Scissors that allows the player to play against the computer who will generate it's choice at random. 
-The game will last 5 rounds, displaying the tally throghout. After Round 5 the game will dislay the Game Winner, and allow for the option to _Play Again_.
+Create a fun and easy to navigate interactive game of Rock, Paper & Scissors that allows the player to play against the computer who will generate its choice at random. 
+The game will last 5 rounds, displaying the tally throughout. After Round 5 the game will display the Game Winner, and allow for the option to _Play Again_.
 
 
 The site aesthetic is minimalistic: displays big buttons and bold images of the player and computer choice. It is styled with bright and contrasting colors.
@@ -69,7 +69,7 @@ STRUCTURE:
 
 #### _Header - Game Title_
 
-*   The header displaying th game title is clearly displayed at the top of the HTML page.
+*   The header displaying the game title is clearly displayed at the top of the HTML page.
 *   It is styled in CSS with fun font-family and in bright and contrasting colors which set the mood to the game.
 
 <img src="assets/images/header.png" width="500px">
@@ -84,7 +84,7 @@ STRUCTURE:
 The initial homepage consists of:
 
 * The header, containing the name of the game: Rock, Paper, Scissors. It is clearly displayed at the top of the page in bright, large, fun contrasting styling.
-* An image of three hand symbols representing rock, paper and scissors. They are minimalistic and complemtory to the page's fun, bold, simplistic styling.
+* An image of three hand symbols representing rock, paper and scissors. They are minimalistic and complementory to the page's fun, bold, simplistic styling.
 * A small form where the Player will be required to submit their name. The form will not submit without this information. The submit button is styled in the same colors as the header and it reads "Let's rock!".
 
 
@@ -98,8 +98,8 @@ The initial homepage consists of:
 
 When clicking "let's rock!" in the initial form, you are taken to the initial play round modal. This displays:
 
-* A short subtitle displaying Round number 1. This allows the user to immediatey recognise there will be a set amount of rounds and will make the game progress easy to track. 
-* Rock, Paper and Scissors interactive buttons. These are styled in the same bright bold colors, fun font, and are displayed clearly in the center of the page.
+* A short subtitle displaying Round number 1. This allows the user to immediately recognise there will be a set number of rounds and will make the game progress easy to track. 
+* Rock, Paper and Scissors interactive buttons. These are styled in the same bright bold colors, fun font, and are displayed clearly in the centre of the page.
 
 
 <img src="assets/images/mobile-round1-display.png" width="500px">
@@ -110,13 +110,13 @@ When clicking "let's rock!" in the initial form, you are taken to the initial pl
 
 * * *
 
-After the user selecting their first choice of Rock, Paper or Scissors, they are lead to the next modal(play-round-2 modal). There are only a couple of additions to this display:
+After the user selecting their first choice of Rock, Paper or Scissors, they are lead to the next modal (play-round-2 modal). There are only a couple of additions to this display:
 
-*   The same subtitle displaying Round Number: x. The round has been updated using Javascript. It will increment +1 each time, untill reaching Round 5.
+*   The same subtitle displaying Round Number: x. The round has been updated using Javascript. It will increment +1 each time, until reaching Round 5.
 *   The selection buttons for the next round remain displayed below for game continuity.
 *   A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
 *   A visual representation of the User and Computer's selection. This is divided into:
-    * User and computer image of their selection (rock, paper, or scissors). They are centered and facing each other as they would in real life.
+    * User and computer image of their selection (rock, paper, or scissors). They are centred and facing each other as they would in real life.
     * A label underneath each image. The User's player label displays the Name that has been input into the form. The computers label simply displays _Computer:_
 *   A div containing the previous rounds result: An short alert message displaying previous round result: You win!, You lose!, or You draw!
 
@@ -132,8 +132,8 @@ After the user selecting their first choice of Rock, Paper or Scissors, they are
 After the user has selected their final choice in Round 5, they are redirected to the Game Over Modal. This displays:
 
 * A div clearly displaying the Game tally of win, lose, and draw. The score is underlined.
-* Final Alert message dsplaying the game result: You win! You lose! You draw! 
-* A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clickng this button will trigger a function reseting the game back to _launch-game-modal_
+* Final Alert message displaying the game result: You win! You lose! You draw! 
+* A Refresh button to restart the game. It is styled in the same way as the previous buttons. Clicking this button will trigger a function resetting the game back to _launch-game-modal_
 
 <img src="assets/images/mobile-gameover-display.png" width="500px">
 
@@ -169,7 +169,7 @@ Before starting, I created the wireframes displayed above. I knew I wanted the g
 * * *
 
 For the purpose of this game, I wanted to choose very block, bright, almost cartoon-like colors that would work well together.
-I came up with the following pallette:
+I came up with the following palette:
 
 <img src="assets/images/green.png" width="200px">
 <img src="assets/images/black.png" width="200px">
@@ -183,7 +183,7 @@ I came up with the following pallette:
 * * *
 
 Shadows into Light: I wanted to use a playful font that would go nicely with the game. It is fun, relaxed, cartoon-like, and it has some personality! My fall-back font is Sans, which I think also goes nicely with the site's feel and purpose.
-I initialy wanted to combine it with anothe font, but once I started styling I preferred keeping it the one.
+I initially wanted to combine it with another font, but once I started styling, I preferred keeping it the one.
 
 <img src="assets/images/shadowsintolight-font.png" width="600px">
 
@@ -212,7 +212,7 @@ FEATURES:
 
   <img src="assets/images/mobile-launch-display.png" width="500px"> 
 
-*   Play Round Modal: which loads once the user has submited the form. The form takes the player name and uses it below.
+*   Play Round Modal: which loads once the user has submitted the form. The form takes the players name and uses it below.
     * Same header
     * Round number
     * 3 clickable buttons labelled: Rock, Paper and Scissors.
@@ -223,13 +223,13 @@ FEATURES:
 
 *   As from Round 2... the same as above, plus...
     * The round number will update itself each round!
-    * A tally of the current score (which will update round after round): For example _Win: 0 Draw: 1 Lose: 2_
+    * A tally of the current score (which will update round after round): For example: _Win: 0 Draw: 1 Lose: 2_
     * A black box with the outcome of the previous play: For example: _You Draw!_
 
  <img src="assets/images/mobile-playround-display.png" width="500px"> 
 
 * After the final Round 5...
-    * The final score tally
+    * The final score tally.
     * The final game result. For example: _Congratulations, you win!_
     * A Refresh button, to play again! (This takes the user back to the start)
 
@@ -289,7 +289,7 @@ For testing I used the following sources:
 #### [HTML Validator](https://validator.w3.org/)
 
 Tested and no errors found.
-The warnings noted below are for psaced that will be filled out using Javascript code.
+The warnings noted below are for placed that will be filled out using Javascript code.
 
 <img src="assets/images/html-validator.png" width="800px">
 
@@ -304,7 +304,7 @@ Tested and a few errors were found.
 
 <img src="assets/images/js-validator.png" width="800px">
 
-Most of these were due to having not put "let" before. Once thes bugs were fixed...
+Most of these were due to having not put "let" before. Once these bugs were fixed...
 
 <img src="assets/images/js-validator-2.png" width="800px">
 
@@ -334,7 +334,7 @@ During this testing I did notice a big problem with the end result! This is expl
 * The header bar is fully visible and remains at the top and footer is fixed at the bottom, large enough to view and click into the Github icon yet not distracting from its content. For continuity, they remain this way during the entire game.
 * The initial home screen is welcoming, displaying the Rock, Paper, scissors image upon loading and its form.
 * The initial form is of an appropriate size, and easily clickable to input the field text and click the submit button.
-* During the 5 game rounds the following features remained deisplayed in the same position: Round number, selection buttons, score tally, user-image and computer-image hands, and the round result.
+* During the 5 game rounds the following features remained displayed in the same position: Round number, selection buttons, score tally, user-image and computer-image hands, and the round result.
 
 <img src="assets/images/mobile-launch-display.png" width="400px">
 <img src="assets/images/mobile-playround-display.png" width="400px">
@@ -357,7 +357,7 @@ During this testing I did notice a big problem with the end result! This is expl
 * The laptop also displays nicely on all pages. 
 * The button sizes are larger again.
 * Font size has been increased also.
-* The Score area and final result areas have been placed in a more narrow div that is aligned with the button width.
+* The Score area and final result areas have been placed in a narrower div that is aligned with the button width.
 
 <img src="assets/images/large-launch-display.png" width="400px">
 <img src="assets/images/large-playround-display.png" width="400px">
@@ -376,7 +376,7 @@ During this testing I did notice a big problem with the end result! This is expl
 
 <img src="assets/images/result-error-bug.png" width="600px">
 
-What was happening was that the result for Round 4 was being read to come up with the final answer. Upon getting assistance from the Code Institute mentors, we discovered that there the easiest option would be to swicth the order of the functions run within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
+What was happening was that the result for Round 4 was being read to come up with the final answer. Upon getting assistance from the Code Institute mentors, we discovered that there the easiest option would be to switch the order of the functions run within the playRound(e) function. We would instead place updateRound() at the ends of the function. This fixed the issue.
 
 <img src="assets/images/result-error-bug-2.png" width="300px"><img src="assets/images/result-error-bug-3.png" width="300px">
 
@@ -388,7 +388,7 @@ What was happening was that the result for Round 4 was being read to come up wit
 
 * * * 
 
-When putting the site through lighthouse testing I received the following report.
+When putting the site through lighthouse testing, I received the following report.
 
 ##### Mobile Lighthouse testing 
 
@@ -404,21 +404,21 @@ When putting the site through lighthouse testing I received the following report
 
 1. The site is designed in a way that makes the game fun and easy to play.
 
-YES! The styling of the site is simplistic and fun. The buttons and big and bright, and are styled when being hovered over. The page displays images of rock, paper and scissors when called upon. The images are big and bold. The rounds are clearly labeled and the results clearly displayed. It is easy for the user to Refresh the game and play again and again!
+YES! The styling of the site is simplistic and fun. The buttons and big and bright, and are styled when being hovered over. The page displays images of rock, paper and scissors when called upon. The images are big and bold. The rounds are clearly labelled and the results clearly displayed. It is easy for the user to Refresh the game and play again and again!
 
 <img src="assets/images/results-display.png" width="300px"> 
 
 <img src="assets/images/refresh-1.png" width="300px"> <img src="assets/images/refresh-2.png" width="300px">
 
 
-2. The games feels personal as the user can input their name and see it displayed throughout.
+2. The game feels personal as the user can input their name and see it displayed throughout.
 
 YES! The player is able to input their name into an initial form. This is required to play the game. That name is then displayed at the bottom of the user's selection. the use of this tool makes the game personal!
 
 <img src="assets/images/name-form.png" width="300px"> <img src="assets/images/name-display.png" width="300px">
 
 
-3. The game round's and scores are displayed throughout. 
+3. The game rounds and scores are displayed throughout. 
 
 YES! Both are displayed clearly throughout the rounds.
 
@@ -426,7 +426,7 @@ YES! Both are displayed clearly throughout the rounds.
 
 4. The user will want to come back for more!
 
-This game is fun, easy to play and can be easily replayed after 5 rounds. It's styling is simplistic and fun which will leave th player wanting to come back!
+This game is fun, easy to play and can be easily replayed after 5 rounds. Its styling is simplistic and fun which will leave the player wanting to come back!
 
 <img src="assets/images/play-again-button.png" width="200px">
 
