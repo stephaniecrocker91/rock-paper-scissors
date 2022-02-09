@@ -52,7 +52,6 @@ function handlePlayerName(e) {
     e.preventDefault();
     let playerName = (document.getElementById("player-name")).value;
     (document.getElementById("insert-player-name")).innerText = playerName;
-    /*new!!!!!!!!!!!*/
     (document.getElementById("header")).style.display = "none";
     (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "block";
@@ -166,7 +165,8 @@ function updateLose() {
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block"; 
-    (document.getElementById("game-over-modal")).style.display = "block";  
+    (document.getElementById("game-over-modal")).style.display = "block";
+    (document.getElementById("round-1-rocks")).style.display = "block";  
     gameOverResult();
  }
 
