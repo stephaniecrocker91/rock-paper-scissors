@@ -160,7 +160,7 @@ function updateLose() {
     } else if (finalScoreLose == finalScoreWin) {
         (document.getElementById("game-over-result")).innerHTML = "It's a draw!";
     }
-    (document.getElementById("header")).style.display = "block";
+    (document.getElementById("header")).style.display = "flex";
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";

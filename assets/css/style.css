@@ -7,13 +7,25 @@ body {
     letter-spacing: 2px;
     text-align: center;
     margin: 0;
+    padding: 0;
 }
+
+section{
+    display: grid;
+}
+
+h2{
+    margin: 0;
+}
+
 
 /* ------------------ Header styling ------------------ */
 #header {
     background-color: rgb(144, 238, 144);
-    height: fit-content;
-    display: grid;
+    height: 22vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 h1 {
@@ -58,9 +70,6 @@ h2 {
 
 
 /* ------------------ Launch-game-modal styling ------------------ */
-#launch-game-modal {
-    height: fit-content;
-}
 
 #form-div {
     font-size: 2.8vh;
@@ -83,17 +92,28 @@ h2 {
 
 
 /* ------------------ Game Modal Styling ------------------ */
+
 #round-number-display {
     margin-bottom: 0;
-    margin-top: 3vh;
 }
 
 #round-number-section img {
     height: 60px;
 }
 
+#play-round-modal-1{
+    height: 30vh;
+}
+
+#round-1-rocks{
+    height: 30vh;
+}
+
 
 /* ------------------ User and computer image choice styling ------------------ */
+
+
+
 #user-image img,
 #user-round-1-rock img {
     transform: rotateY(180deg);
@@ -110,6 +130,10 @@ h2 {
 .inline p {
     margin-top: 0;
     margin-bottom: 2vh;
+}
+
+#selected-choices-section{
+    height: 30vh;
 }
 
 /* ---------------- You lose, you win, you draw alert styling ------------------ */
@@ -136,15 +160,19 @@ h2 {
 
 /* ------------------ Footer styling ------------------ */
 #footer {
-    position: fixed;
-    bottom: 0;
     width: 100vw;
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
+    height: 5vh;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
 }
+
 #footer a {
-    color:black;
+    color: black;
 }
+
 #footer a:hover {
     font-size: 2rem;
 }
@@ -153,7 +181,7 @@ h2 {
 
 /* Phone displays*/
 @media screen and (max-width: 500px) {
-   
+
     h1 {
         font-size: 6vh;
     }
@@ -161,8 +189,8 @@ h2 {
     h2 {
         font-size: 5vh;
     }
-   
-   
+
+
     #round-number-section img {
         height: 40px;
     }
@@ -235,13 +263,12 @@ h2 {
 
     h1 {
         font-size: 80px;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
     }
 
     h2 {
         font-size: 60px;
     }
+
     p {
         font-size: 30px;
     }
