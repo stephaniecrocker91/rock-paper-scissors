@@ -19,6 +19,10 @@ let alertResultDescription = document.getElementById("alert-result-description")
 // Creates overlay when displaying alert pop ups
 let overlay = document.getElementById("overlay");
 
+
+let gameOverModal = document.getElementById("game-over-modal");
+let gameOverBox = document.getElementById("game-over-box");
+
 // Where we store our computers choice and users choice
 let userSelectedChoice;
 let computerSelectedChoice;
@@ -110,27 +114,22 @@ function computerChoice() {
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
         alertResult.innerHTML = "Round drawn!";
-        stylePopup()
+        resultsPopup()
         updateDraw();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
         alertResult.innerHTML = "Round won!";
         displayRoundResult()
-        stylePopup()
+        resultsPopup()
         updateWin();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
         alertResult.innerHTML = "Round lost!";
         displayRoundResult()
-        stylePopup()
+        resultsPopup()
         updateLose();
     }
     // Close the alert message after 2 seconds
     setTimeout(function () {
-        alertResult.innerHTML = "";
-        alertResultDescription.innerHTML = "";
-        alertResult.style.width = "0vw";
-        alertResult.classList.remove('grow');
-        alertResultDescription.classList.remove('grow-p');
-        overlay.classList.remove('overlay');
+        removePopup()
     }, 2000);
 }
 
@@ -147,11 +146,22 @@ function displayRoundResult() {
 
 /*FUNCTION animating POP-UP ALERT*/
 
-function stylePopup() {
+function resultsPopup() {
     alertResult.style.width = "60vw";
     alertResult.classList.add('grow');
     alertResultDescription.classList.add('grow-p');
     overlay.classList.add('overlay');
+}
+
+/*FUNCTION removes POP-UP styling*/
+
+function removePopup() {
+    alertResult.innerHTML = "";
+    alertResultDescription.innerHTML = "";
+    alertResult.style.width = "0vw";
+    alertResult.classList.remove('grow');
+    alertResultDescription.classList.remove('grow-p');
+    overlay.classList.remove('overlay');
 }
 
 /** FUNCTION that increments the WIN
@@ -196,11 +206,17 @@ function gameOver() {
     (document.getElementById("header")).style.display = "flex";
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("selected-choices-section")).style.display = "none";
-    (document.getElementById("alert-section")).style.display = "none";
+    (document.getElementById("alert-box")).style.display = "none";
     (document.getElementById("overlay")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block";
     (document.getElementById("game-over-modal")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "inline-block";
+    gameOverPopUp();
+}
+
+function gameOverPopUp(){
+    gameOverModal.classList.add('overlay-gameover');
+    gameOverBox.classList.add('grow-g');
 }
 
 
