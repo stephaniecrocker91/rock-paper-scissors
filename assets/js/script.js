@@ -12,8 +12,11 @@ let wins = document.getElementById("user-win");
 let lose = document.getElementById("user-lose");
 let draw = document.getElementById("draw");
 
-// Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
+// Gets alert-result section pop up
 let alertResult = document.getElementById("alert-result");
+
+//Creates overlay when displaying alert pop ups
+let overlay = document.getElementById("overlay");
 
 // Where we store our computers choice and users choice
 let userSelectedChoice;
@@ -105,15 +108,15 @@ function computerChoice() {
  * the result and displaying an alert message of: ("You win!", "You lose!" or "You draw!") */
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
-        alertResult.innerHTML = "You draw!";
+        alertResult.innerHTML = "Round drawn!";
         stylePopup()
         updateDraw();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
-        alertResult.innerHTML = "You win!";
+        alertResult.innerHTML = "Round won!";
         stylePopup()
         updateWin();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
-        alertResult.innerHTML = "You lose!";
+        alertResult.innerHTML = "Round lost!";
         stylePopup()
         updateLose();
     }
@@ -122,6 +125,7 @@ function compareChoice() {
             alertResult.innerHTML = "";
             alertResult.style.width = "0vw";
             alertResult.classList.remove('grow');
+            overlay.classList.remove('overlay');
         }, 2000);
 }
 
@@ -168,6 +172,7 @@ function gameOver() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";
+    (document.getElementById("overlay")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block";
     (document.getElementById("game-over-modal")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "inline-block";
@@ -178,6 +183,7 @@ function gameOver() {
 function stylePopup(){
     alertResult.style.width = "60vw";
     alertResult.classList.add('grow');
+    overlay.classList.add('overlay');
 }
 
 

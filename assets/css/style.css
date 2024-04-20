@@ -18,6 +18,16 @@ h2{
     margin: 0;
 }
 
+.overlay{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(0 0 0 / 80%);
+    position: absolute;
+    top: 22vh;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
 /* ------------------ Game BOX-----------------*/
 
 
@@ -166,6 +176,7 @@ h2 {
 /* Class added to apply animation to pop up */
 .grow {
     animation: grow 2s ease forwards;
+    z-index: 2;
 }
 
 
