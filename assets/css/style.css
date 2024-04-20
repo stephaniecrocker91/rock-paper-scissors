@@ -18,6 +18,8 @@ h2{
     margin: 0;
 }
 
+/* ------------------ Game BOX-----------------*/
+
 
 /* ------------------ Header styling ------------------ */
 #header {
@@ -65,7 +67,6 @@ h2 {
 #refresh-button:hover {
     background-color: black;
     color: whitesmoke;
-    font-size: 2rem;
 }
 
 
@@ -105,8 +106,10 @@ h2 {
     height: 30vh;
 }
 
-#round-1-rocks{
-    height: 30vh;
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -132,17 +135,39 @@ h2 {
     margin-bottom: 2vh;
 }
 
-#selected-choices-section{
-    height: 30vh;
-}
-
-/* ---------------- You lose, you win, you draw alert styling ------------------ */
+/* ---------------- Alert Pop Up ------------------ */
 #alert-section {
     background-color: black;
     color: whitesmoke;
-    height: fit-content;
-    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@keyframes grow {
+    0% {
+        width: 0vw;
+        font-size: 0px;
+    }
+    50% {
+        width: 70vw; /* Increase the size */
+        font-size: 70px;
+    }
+    100% {
+        width: 60vw; /* Decrease the size slightly before disappearing */
+        font-size: 60px;
+    }
+}
+
+/* Class added to apply animation to pop up */
+.grow {
+    animation: grow 2s ease forwards;
+}
+
 
 /* ------------------ Score display styling: win, lose, draw tally ------------------ */
 .inline {
@@ -164,9 +189,7 @@ h2 {
     background-color: white;
     color: black;
     height: 5vh;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
+    margin-top: 40px;
 }
 
 #footer a {
@@ -245,17 +268,6 @@ h2 {
         font-size: 2rem;
     }
 
-    .selection-button:hover,
-    #button-name:hover,
-    #refresh-button:hover {
-        font-size: 2.5rem;
-    }
-
-    button-name:hover,
-    #refresh-button:hover {
-        width: 15rem;
-    }
-
 }
 
 /* Large screen displays */
@@ -273,7 +285,6 @@ h2 {
         font-size: 30px;
     }
 
-    #alert-section,
     #score-area,
     #button-area {
         width: 60vw;

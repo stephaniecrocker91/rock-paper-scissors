@@ -22,8 +22,8 @@
             <h1>Rock, Paper, Scissors</h1>
         </div>
     </header>
-    <!-- Launch Game Modal here-->
     <main>
+        <!-- Launch Game Modal here-->
         <section id="launch-game-modal">
             <div id="form-div">
                 <img src="./assets/images/rocklogo.jpg" alt="" class="rockpaperscissorsimage">
@@ -41,18 +41,12 @@
             <div id="play-round-modal-1">
                 <div id="round-number-section">
                     <h2 id="round-number-display">Round <span id="round-number">1</span></h2>
-                    <img src="./assets/images/underline.png" alt="pen marker underline">
                 </div>
                 <div id="button-area">
                     <button class="selection-button" id="rock">rock</button>
                     <button class="selection-button" id="paper">paper</button>
                     <button class="selection-button" id="scissors">scissors</button>
                 </div>
-            </div>
-            <div id="score-area">
-                <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
-                <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
-                <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
             </div>
             <div id="round-1-rocks">
                 <div class="inline">
@@ -73,11 +67,18 @@
                         <p>Computer: </p>
                     </div>
                 </div>
+                <div id="score-area">
+                    <p class="inline">Win: <span id="user-win" class="large-underline-text">0</span></p>
+                    <p class="inline">Draw: <span id="draw" class="large-underline-text">0</span></p>
+                    <p class="inline">Lose: <span id="user-lose" class="large-underline-text">0</span></p>
+                </div>
                 <div id="alert-section">
                     <h2 id="alert-result"></h2>
                 </div>
             </div>
-            <!-- Game Over Modal here -->
+        </section>
+        <!-- Game Over Modal here -->
+        <section>
             <div id="game-over-modal">
                 <h2 id="game-over-result"></h2>
                 <button id="refresh-button">Play again!</button>

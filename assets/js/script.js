@@ -1,41 +1,41 @@
-//-------------------GLOBAL VARIABLES-------------------
+// -------------------GLOBAL VARIABLES-------------------
 
-//Gets span where Round Number will be displayed.
+// Gets span where Round Number will be displayed.
 let roundNumberDisplay = document.getElementById("round-number");
 
-//Gets span where User Choice & Computer Choice will be displayed as image
+// Gets span where User Choice & Computer Choice will be displayed as image
 let userChoiceDisplay = document.getElementById("user-image");
 let computerChoiceDisplay = document.getElementById("computer-image");
 
-//Gets span where WIN, LOSE and DRAW scores will be displayed.
+// Gets span where WIN, LOSE and DRAW scores will be displayed.
 let wins = document.getElementById("user-win");
 let lose = document.getElementById("user-lose");
 let draw = document.getElementById("draw");
 
-//Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
+// Gets alert-result section where "You win", "You lose" or "You draw" will be displayed accordingly.
 let alertResult = document.getElementById("alert-result");
 
-//Where we store our computers choice and users choice
+// Where we store our computers choice and users choice
 let userSelectedChoice;
 let computerSelectedChoice;
 
-//-------------------EVENT LISTENERS-------------------
+// -------------------EVENT LISTENERS-------------------
 
 // Event listener for submit button in form
 let form = document.getElementById("player-name-form");
 form.addEventListener("submit", handlePlayerName);
 
-//Event listener for Rock, Paper, Scissor selection buttons
+// Event listener for Rock, Paper, Scissor selection buttons
 let selectionButton = document.getElementsByClassName("selection-button");
 for (let i of selectionButton) {
     i.addEventListener("click", playRound);
 }
 
-//Event listener for Refresh Button
+// Event listener for Refresh Button
 let refreshButton = document.getElementById("refresh-button");
 refreshButton.addEventListener("click", refreshGame);
 
-//-------------------FUNCTIONS BELOW!-------------------
+// -------------------FUNCTIONS BELOW!-------------------
 
 /** FUNCTION for Launch Game Modal */
 function launchGame() {
@@ -44,7 +44,7 @@ function launchGame() {
     (document.getElementById("play-round-modal-2")).style.display = "none";
     (document.getElementById("game-over-modal")).style.display = "none";
     (document.getElementById("score-area")).style.display = "none";
-    
+
 }
 
 /** FUNCTION for adding Player Name */
@@ -52,12 +52,11 @@ function handlePlayerName(e) {
     e.preventDefault();
     let playerName = (document.getElementById("player-name")).value;
     (document.getElementById("insert-player-name")).innerText = playerName;
-    (document.getElementById("header")).style.display = "none";
     (document.getElementById("play-round-modal-1")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "block";
     (document.getElementById("launch-game-modal")).style.display = "none";
     (document.getElementById("score-area")).style.display = "block";
-    
+
 }
 
 /** FUNCTION that runs each round */
@@ -107,18 +106,23 @@ function computerChoice() {
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
         alertResult.innerHTML = "You draw!";
+        stylePopup()
         updateDraw();
-    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") ||
-        (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") ||
-        (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
+    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
         alertResult.innerHTML = "You win!";
+        stylePopup()
         updateWin();
-    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") ||
-        (userSelectedChoice === "rock" && computerSelectedChoice === "paper") ||
-        (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
+    } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
         alertResult.innerHTML = "You lose!";
+        stylePopup()
         updateLose();
     }
+        // Close the alert message after 2 seconds
+        setTimeout(function() {
+            alertResult.innerHTML = "";
+            alertResult.style.width = "0vw";
+            alertResult.classList.remove('grow');
+        }, 2000);
 }
 
 /** FUNCTION that increments the WIN
@@ -148,7 +152,7 @@ function updateLose() {
 /**FUNCTION that will 
  * display GAME OVER MODAL after 5 rounds and show final result of game
  */
- function gameOver() {
+function gameOver() {
     let finalScoreWin = parseInt(document.getElementById("user-win").innerText);
     let finalScoreLose = parseInt(document.getElementById("user-lose").innerText);
     console.log(finalScoreLose);
@@ -164,12 +168,19 @@ function updateLose() {
     (document.getElementById("play-round-modal-1")).style.display = "none";
     (document.getElementById("selected-choices-section")).style.display = "none";
     (document.getElementById("alert-section")).style.display = "none";
-    (document.getElementById("score-area")).style.display = "block"; 
+    (document.getElementById("score-area")).style.display = "block";
     (document.getElementById("game-over-modal")).style.display = "block";
-    (document.getElementById("round-1-rocks")).style.display = "block";  
- }
+    (document.getElementById("round-1-rocks")).style.display = "inline-block";
+}
 
-   
+/*Function style pop up*/
+
+function stylePopup(){
+    alertResult.style.width = "60vw";
+    alertResult.classList.add('grow');
+}
+
+
 /** FUNCTION to REFRESH GAME back to start
  */
 function refreshGame() {
