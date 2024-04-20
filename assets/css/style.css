@@ -64,10 +64,14 @@ h2 {
 }
 
 .selection-button:hover,
-#button-name:hover,
-#refresh-button:hover {
+#button-name:hover {
     background-color: black;
     color: whitesmoke;
+}
+
+#refresh-button:hover{
+    background-color: white;
+    color: black;
 }
 
 
@@ -155,7 +159,7 @@ h2 {
 .overlay{
     width: 100vw;
     height: 80vh;
-    background-color: rgb(0 0 0 / 80%);
+    background-color: rgb(0 0 0 / 85%);
     position: absolute;
     top: 22vh;
     left: 50%;
@@ -221,7 +225,7 @@ h2 {
 .overlay-gameover{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0 0 0 / 80%);
+    background-color: rgb(0 0 0 / 90%);
     position: absolute;
     top: 50%;
     left: 50%;
