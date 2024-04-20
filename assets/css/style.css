@@ -154,9 +154,10 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
 
 @keyframes grow {
     0% {
@@ -176,6 +177,24 @@ h2 {
 /* Class added to apply animation to pop up */
 .grow {
     animation: grow 2s ease forwards;
+    z-index: 2;
+}
+
+@keyframes grow-p {
+    0% {
+        font-size: 0px;
+    }
+    50% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: 40px;
+    }
+}
+
+/* Class added to apply animation to pop up */
+.grow-p {
+    animation: grow-p 2s ease forwards;
     z-index: 2;
 }
 

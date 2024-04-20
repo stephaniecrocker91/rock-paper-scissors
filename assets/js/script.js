@@ -1,4 +1,4 @@
-// -------------------GLOBAL VARIABLES-------------------
+// -------------------GLOBAL VARIABLES--------------------------------------------------------
 
 // Gets span where Round Number will be displayed.
 let roundNumberDisplay = document.getElementById("round-number");
@@ -14,15 +14,16 @@ let draw = document.getElementById("draw");
 
 // Gets alert-result section pop up
 let alertResult = document.getElementById("alert-result");
+let alertResultDescription = document.getElementById("alert-result-description");
 
-//Creates overlay when displaying alert pop ups
+// Creates overlay when displaying alert pop ups
 let overlay = document.getElementById("overlay");
 
 // Where we store our computers choice and users choice
 let userSelectedChoice;
 let computerSelectedChoice;
 
-// -------------------EVENT LISTENERS-------------------
+// -------------------EVENT LISTENERS---------------------------------------------------------
 
 // Event listener for submit button in form
 let form = document.getElementById("player-name-form");
@@ -38,7 +39,7 @@ for (let i of selectionButton) {
 let refreshButton = document.getElementById("refresh-button");
 refreshButton.addEventListener("click", refreshGame);
 
-// -------------------FUNCTIONS BELOW!-------------------
+// -------------------FUNCTIONS --------------------------------------------------------------
 
 /** FUNCTION for Launch Game Modal */
 function launchGame() {
@@ -105,7 +106,7 @@ function computerChoice() {
 }
 
 /** FUNCTION that compares user choice and computer choice, determining
- * the result and displaying an alert message of: ("You win!", "You lose!" or "You draw!") */
+ * the result and displaying an POP-UP ALERT message of: ("You win!", "You lose!" or "You draw!") */
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
         alertResult.innerHTML = "Round drawn!";
@@ -113,20 +114,44 @@ function compareChoice() {
         updateDraw();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
         alertResult.innerHTML = "Round won!";
+        displayRoundResult()
         stylePopup()
         updateWin();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
         alertResult.innerHTML = "Round lost!";
+        displayRoundResult()
         stylePopup()
         updateLose();
     }
-        // Close the alert message after 2 seconds
-        setTimeout(function() {
-            alertResult.innerHTML = "";
-            alertResult.style.width = "0vw";
-            alertResult.classList.remove('grow');
-            overlay.classList.remove('overlay');
-        }, 2000);
+    // Close the alert message after 2 seconds
+    setTimeout(function () {
+        alertResult.innerHTML = "";
+        alertResultDescription.innerHTML = "";
+        alertResult.style.width = "0vw";
+        alertResult.classList.remove('grow');
+        alertResultDescription.classList.remove('grow-p');
+        overlay.classList.remove('overlay');
+    }, 2000);
+}
+
+/*FUNCTION displayRoundResult */
+function displayRoundResult() {
+    if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper")) {
+        alertResultDescription.innerHTML = "Paper beats Rock!";
+    } else if ((userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
+        alertResultDescription.innerHTML = "Rock beats Scissors!";
+    } else if ((userSelectedChoice === "scissors" && computerSelectedChoice === "paper") || (userSelectedChoice === "paper" && computerSelectedChoice === "scissors")) {
+        alertResultDescription.innerHTML = "Scissors beats Paper!";
+    }
+}
+
+/*FUNCTION animating POP-UP ALERT*/
+
+function stylePopup() {
+    alertResult.style.width = "60vw";
+    alertResult.classList.add('grow');
+    alertResultDescription.classList.add('grow-p');
+    overlay.classList.add('overlay');
 }
 
 /** FUNCTION that increments the WIN
@@ -176,14 +201,6 @@ function gameOver() {
     (document.getElementById("score-area")).style.display = "block";
     (document.getElementById("game-over-modal")).style.display = "block";
     (document.getElementById("round-1-rocks")).style.display = "inline-block";
-}
-
-/*Function style pop up*/
-
-function stylePopup(){
-    alertResult.style.width = "60vw";
-    alertResult.classList.add('grow');
-    overlay.classList.add('overlay');
 }
 
 
