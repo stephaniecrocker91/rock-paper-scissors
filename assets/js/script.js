@@ -113,16 +113,16 @@ function computerChoice() {
  * the result and displaying an POP-UP ALERT message of: ("You win!", "You lose!" or "You draw!") */
 function compareChoice() {
     if (computerSelectedChoice === userSelectedChoice) {
-        alertResult.innerHTML = "Round drawn!";
+        alertResult.innerHTML = "It's a tie!";
         resultsPopup()
         updateDraw();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "rock") || (userSelectedChoice === "rock" && computerSelectedChoice === "scissors") || (userSelectedChoice === "scissors" && computerSelectedChoice === "paper")) {
-        alertResult.innerHTML = "Round won!";
+        alertResult.innerHTML = "Nice one!";
         displayRoundResult()
         resultsPopup()
         updateWin();
     } else if ((userSelectedChoice === "paper" && computerSelectedChoice === "scissors") || (userSelectedChoice === "rock" && computerSelectedChoice === "paper") || (userSelectedChoice === "scissors" && computerSelectedChoice === "rock")) {
-        alertResult.innerHTML = "Round lost!";
+        alertResult.innerHTML = "Tough luck...";
         displayRoundResult()
         resultsPopup()
         updateLose();
